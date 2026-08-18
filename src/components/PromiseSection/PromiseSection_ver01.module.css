@@ -1,26 +1,31 @@
 /* ver01: 1440px 최종 치수의 박스 모델만 적용한 기본 단계 */
+/* 사용자 선택권 섹션의 전체 여백 */
 .section {
   width: 100%;
   padding: 104px 22px;
 }
 
+/* 섹션 콘텐츠의 최대 너비 제한 */
 .container {
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
 }
 
+/* 세 가지 이용 원칙을 배치하는 3열 Grid */
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
+/* 각 이용 원칙 카드의 내부 여백 */
 .card {
   padding: 27px;
   border: 1px solid #000;
 }
 
+/* 카드 상단 체크 표시의 크기와 정렬 */
 .check {
   width: 34px;
   height: 34px;
@@ -30,12 +35,14 @@
   font-weight: 950;
 }
 
+/* 이용 원칙 카드 제목 */
 .card h3 {
   margin-bottom: 7px;
   font-size: 17px;
   font-weight: 900;
 }
 
+/* 이용 원칙 카드 설명 */
 .card p {
   font-size: 13.5px;
 }

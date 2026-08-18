@@ -1,4 +1,5 @@
 /* ver01: 1440px 최종 치수의 박스 모델만 적용한 기본 단계 */
+/* 페이지 하단 Footer의 전체 여백과 글자 정렬 */
 .footer {
   width: 100%;
   padding: 48px 22px 38px;
@@ -6,6 +7,7 @@
   font-size: 13px;
 }
 
+/* 앱 아이콘과 서비스명을 한 줄로 배치 */
 .brand {
   margin-bottom: 20px;
   display: inline-flex;
@@ -15,11 +17,13 @@
   font-weight: 900;
 }
 
+/* Footer 브랜드 아이콘 크기 */
 .brand img {
   width: 30px;
   height: 30px;
 }
 
+/* 정책·지원 링크의 줄바꿈 가능한 가로 배치 */
 .links {
   margin-bottom: 21px;
   display: flex;
@@ -29,10 +33,12 @@
   gap: 14px 25px;
 }
 
+/* Footer 링크 글자 굵기 */
 .links a {
   font-weight: 700;
 }
 
+/* 저작권과 데이터 출처 문구 */
 .copy {
   font-size: 12px;
 }

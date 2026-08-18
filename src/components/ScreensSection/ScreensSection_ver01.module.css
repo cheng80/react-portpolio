@@ -1,38 +1,45 @@
 /* ver01: 1440px 최종 치수의 박스 모델만 적용한 기본 단계 */
+/* 앱 화면 소개 섹션의 전체 여백 */
 .section {
   width: 100%;
   padding: 104px 22px;
   overflow: hidden;
 }
 
+/* 섹션 콘텐츠의 최대 너비 제한 */
 .container {
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
 }
 
+/* 여섯 앱 화면을 배치하는 3열 Grid */
 .screens {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 26px;
 }
 
+/* Grid 항목이 열 너비보다 커지지 않도록 제한 */
 .item {
   min-width: 0;
 }
 
+/* 9:16 비율의 앱 화면 박스 */
 .image {
   overflow: hidden;
   aspect-ratio: 9 / 16;
   border: 4px solid #000;
 }
 
+/* 앱 화면 이미지를 박스에 맞춰 채움 */
 .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* 각 앱 화면 아래 설명 문구 */
 .item p {
   margin-top: 16px;
   text-align: center;

@@ -1,22 +1,26 @@
 /* ver01: 1440px 최종 치수의 박스 모델만 적용한 기본 단계 */
+/* 마음 편지 섹션의 전체 여백과 위아래 경계 */
 .section {
   width: 100%;
   padding: 104px 22px;
   border-block: 2px solid #000;
 }
 
+/* 섹션 콘텐츠의 최대 너비 제한 */
 .container {
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
 }
 
+/* 두 편지 기능 카드를 배치하는 2열 Grid */
 .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
+/* 아이콘과 설명을 나란히 배치하는 카드 */
 .card {
   padding: 30px;
   display: grid;
@@ -26,6 +30,7 @@
   border: 2px solid #000;
 }
 
+/* 편지 기능 아이콘의 고정 크기 */
 .icon {
   width: 100px;
   height: 100px;
@@ -35,6 +40,7 @@
   font-size: 48px;
 }
 
+/* 편지 기능 카드 제목 */
 .card h3 {
   margin-bottom: 8px;
   font-size: 22px;
@@ -42,6 +48,7 @@
   letter-spacing: -0.7px;
 }
 
+/* 편지 기능 카드 설명 */
 .card p {
   font-size: 14px;
 }

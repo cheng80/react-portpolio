@@ -1,4 +1,5 @@
-/* ver02: 원본의 시각 장식까지 적용한 완성 단계 */
+/* ver02: ver01 박스 모델에 원본의 시각 장식을 추가한 완성 단계 */
+/* 화면 상단에 고정되는 전체 내비게이션 바 */
 .nav {
   position: fixed;
   inset: 0 0 auto;
@@ -10,11 +11,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  /* ver02 변경·추가: 반투명 배경, 하단선과 블러 효과 */
   background: rgba(255, 253, 245, 0.88);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(16px);
 }
 
+/* 앱 아이콘과 서비스명 묶음 */
 .brand {
   display: flex;
   flex-direction: row;
@@ -25,13 +28,16 @@
   letter-spacing: -0.4px;
 }
 
+/* 내비게이션 브랜드 아이콘 크기 */
 .brand img {
   width: 38px;
   height: 38px;
+  /* ver02 변경·추가: 브랜드색 테두리와 둥근 모서리 */
   border: 2px solid var(--navy);
   border-radius: 11px;
 }
 
+/* 주요 섹션 링크의 가로 배치 */
 .links {
   display: flex;
   flex-direction: row;
@@ -41,12 +47,15 @@
   font-weight: 800;
 }
 
+/* ver02 추가: 일반 링크 hover 강조색 */
 .links > a:not(.download):hover {
   color: var(--sky-dark);
 }
 
+/* 링크 목록의 다운로드 버튼 박스 */
 .download {
   padding: 9px 16px;
+  /* ver02 변경·추가: 어두운 캡슐형 버튼과 hover 전환 */
   color: var(--white);
   background: var(--navy);
   border: 2px solid var(--navy);
@@ -54,6 +63,7 @@
   transition: transform 0.18s, box-shadow 0.18s;
 }
 
+/* ver02 추가: 다운로드 버튼을 위로 이동시키는 hover 효과 */
 .download:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 18px rgba(19, 47, 66, 0.2);

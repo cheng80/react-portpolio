@@ -1,4 +1,5 @@
 /* ver01: 1440px 최종 치수의 박스 모델만 적용한 기본 단계 */
+/* 화면 상단에 고정되는 전체 내비게이션 바 */
 .nav {
   position: fixed;
   inset: 0 0 auto;
@@ -13,6 +14,7 @@
   border-bottom: 1px solid #000;
 }
 
+/* 앱 아이콘과 서비스명 묶음 */
 .brand {
   display: flex;
   flex-direction: row;
@@ -23,12 +25,14 @@
   letter-spacing: -0.4px;
 }
 
+/* 내비게이션 브랜드 아이콘 크기 */
 .brand img {
   width: 38px;
   height: 38px;
   border: 2px solid #000;
 }
 
+/* 주요 섹션 링크의 가로 배치 */
 .links {
   display: flex;
   flex-direction: row;
@@ -38,6 +42,7 @@
   font-weight: 800;
 }
 
+/* 링크 목록의 다운로드 버튼 박스 */
 .download {
   padding: 9px 16px;
   border: 2px solid #000;

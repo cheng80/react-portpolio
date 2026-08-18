@@ -1,8 +1,10 @@
 /* ver01: 1440px 최종 치수의 박스 모델만 적용한 기본 단계 */
+/* Kicker·제목·설명을 묶는 공통 제목 영역 */
 .title {
   width: 100%;
 }
 
+/* 섹션 성격을 알리는 작은 영문 Kicker */
 .kicker {
   margin-bottom: 11px;
   text-align: center;
@@ -12,6 +14,7 @@
   text-transform: uppercase;
 }
 
+/* 섹션의 큰 제목 */
 .heading {
   max-width: 760px;
   margin: 0 auto 16px;
@@ -23,6 +26,7 @@
   text-wrap: balance;
 }
 
+/* 섹션 제목 아래 보조 설명 */
 .description {
   max-width: 650px;
   margin: 0 auto 56px;

@@ -1,29 +1,35 @@
-/* ver02: 원본의 시각 장식까지 적용한 완성 단계 */
+/* ver02: ver01 박스 모델에 원본의 시각 장식을 추가한 완성 단계 */
+/* 마지막 다운로드 섹션의 전체 크기와 가운데 정렬 */
 .section {
   position: relative;
   width: 100%;
   padding: 104px 22px;
   overflow: hidden;
   text-align: center;
+  /* ver02 추가: 하늘색에서 노란색으로 이어지는 배경 */
   background: linear-gradient(145deg, #67d6f8, #c7f2ff 60%, #fff0a5);
 }
 
+/* 다운로드 콘텐츠의 최대 너비 제한 */
 .container {
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
 }
 
+/* 다운로드 섹션 상단 앱 아이콘의 크기와 여백 */
 .icon {
   display: inline;
   width: 108px;
   height: 108px;
   margin: 0 0 24px;
+  /* ver02 변경·추가: 브랜드색 테두리, 둥근 모서리와 그림자 */
   border: 4px solid var(--navy);
   border-radius: 28px;
   box-shadow: 7px 8px 0 var(--navy);
 }
 
+/* Google Play와 App Store 버튼의 가로 배치 */
 .storeRow {
   margin-top: 34px;
   display: flex;

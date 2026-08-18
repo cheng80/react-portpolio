@@ -1,4 +1,5 @@
 /* ver01: 1440px 최종 치수의 박스 모델만 적용한 기본 단계 */
+/* 스토어 아이콘과 문구를 나란히 배치하는 버튼 */
 .button {
   min-width: 190px;
   padding: 12px 18px;
@@ -9,6 +10,7 @@
   border: 2px solid #000;
 }
 
+/* Google Play·App Store 심볼 영역 */
 .icon {
   width: 26px;
   text-align: center;
@@ -16,18 +18,21 @@
   line-height: 1;
 }
 
+/* 작은 안내 문구와 스토어명을 세로로 배치 */
 .copy {
   display: flex;
   flex-direction: column;
   line-height: 1.1;
 }
 
+/* 버튼 상단의 작은 안내 문구 */
 .copy small {
   margin-bottom: 4px;
   font-size: 10px;
   font-weight: 650;
 }
 
+/* 버튼 하단의 스토어명 */
 .copy strong {
   font-size: 15px;
   font-weight: 900;

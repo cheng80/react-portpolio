@@ -1,4 +1,5 @@
 /* ver01: 1440px 최종 치수의 박스 모델만 적용한 기본 단계 */
+/* 마지막 다운로드 섹션의 전체 크기와 가운데 정렬 */
 .section {
   position: relative;
   width: 100%;
@@ -7,12 +8,14 @@
   text-align: center;
 }
 
+/* 다운로드 콘텐츠의 최대 너비 제한 */
 .container {
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
 }
 
+/* 다운로드 섹션 상단 앱 아이콘의 크기와 여백 */
 .icon {
   display: inline;
   width: 108px;
@@ -21,6 +24,7 @@
   border: 4px solid #000;
 }
 
+/* Google Play와 App Store 버튼의 가로 배치 */
 .storeRow {
   margin-top: 34px;
   display: flex;

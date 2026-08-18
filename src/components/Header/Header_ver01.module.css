@@ -1,4 +1,5 @@
 /* ver01: 1440px 최종 치수의 박스 모델만 적용한 기본 단계 */
+/* Hero 전체 영역의 최소 높이와 내부 콘텐츠 세로 정렬 */
 .header {
   position: relative;
   width: 100%;
@@ -10,6 +11,7 @@
   align-items: center;
 }
 
+/* 소개 문구와 앱 화면을 배치하는 2열 Grid */
 .inner {
   position: relative;
   z-index: 2;
@@ -22,6 +24,7 @@
   gap: 64px;
 }
 
+/* Hero 상단의 서비스 설명 배지 */
 .eyebrow {
   margin-bottom: 22px;
   padding: 7px 14px;
@@ -34,6 +37,7 @@
   font-weight: 900;
 }
 
+/* Hero의 핵심 제목 크기와 줄 간격 */
 .header h1 {
   max-width: 650px;
   font-size: clamp(44px, 6.7vw, 76px);
@@ -43,10 +47,12 @@
   text-wrap: balance;
 }
 
+/* 제목의 두 번째 문장을 새 줄에 표시 */
 .header h1 span {
   display: block;
 }
 
+/* Hero 제목 아래 서비스 설명 문구 */
 .lead {
   max-width: 580px;
   margin-top: 28px;
@@ -55,6 +61,7 @@
   letter-spacing: -0.3px;
 }
 
+/* Hero 내부 스토어 버튼 배치 */
 .storeRow {
   margin-top: 34px;
   display: flex;
@@ -63,12 +70,14 @@
   gap: 12px;
 }
 
+/* 지원 언어 안내 문구 */
 .locale {
   margin-top: 18px;
   font-size: 12px;
   font-weight: 700;
 }
 
+/* 대표 앱 화면과 스티커의 위치 기준 */
 .visual {
   position: relative;
   width: 100%;
@@ -76,18 +85,21 @@
   margin: 0 auto;
 }
 
+/* 9:16 비율의 대표 앱 화면 박스 */
 .card {
   overflow: hidden;
   aspect-ratio: 9 / 16;
   border: 8px solid #000;
 }
 
+/* 대표 앱 화면 이미지를 박스에 맞춰 채움 */
 .card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* 대표 앱 화면 주변 안내 스티커의 공통 박스 */
 .sticker {
   position: absolute;
   z-index: 2;
@@ -96,11 +108,13 @@
   font-weight: 950;
 }
 
+/* 오른쪽 위 스티커 위치 */
 .top {
   top: 7%;
   right: -21%;
 }
 
+/* 왼쪽 아래 스티커 위치 */
 .bottom {
   bottom: 10%;
   left: -25%;

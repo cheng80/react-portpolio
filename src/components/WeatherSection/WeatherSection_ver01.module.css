@@ -1,21 +1,25 @@
 /* ver01: 1440px 최종 치수의 박스 모델만 적용한 기본 단계 */
+/* 날씨 기능 섹션의 전체 여백 */
 .section {
   width: 100%;
   padding: 104px 22px;
 }
 
+/* 섹션 콘텐츠의 최대 너비 제한 */
 .container {
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
 }
 
+/* 여섯 날씨 기능 카드를 배치하는 3열 Grid */
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
+/* 날씨 기능 카드의 최소 높이와 내부 여백 */
 .card {
   position: relative;
   min-height: 230px;
@@ -24,6 +28,7 @@
   border: 2px solid #000;
 }
 
+/* 날씨 기능 아이콘의 고정 크기 */
 .icon {
   width: 54px;
   height: 54px;
@@ -34,6 +39,7 @@
   font-size: 28px;
 }
 
+/* 날씨 기능 카드 제목 */
 .card h3 {
   margin-bottom: 8px;
   font-size: 19px;
@@ -41,6 +47,7 @@
   letter-spacing: -0.5px;
 }
 
+/* 날씨 기능 카드 설명 */
 .card p {
   font-size: 14px;
 }

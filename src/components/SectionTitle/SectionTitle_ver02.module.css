@@ -1,11 +1,14 @@
-/* ver02: 원본의 시각 장식까지 적용한 완성 단계 */
+/* ver02: ver01 박스 모델에 원본의 글자색을 추가한 완성 단계 */
+/* Kicker·제목·설명을 묶는 공통 제목 영역 */
 .title {
   width: 100%;
 }
 
+/* 섹션 성격을 알리는 작은 영문 Kicker */
 .kicker {
   margin-bottom: 11px;
   text-align: center;
+  /* ver02 추가: Kicker 강조색 */
   color: var(--sky-dark);
   font-size: 13px;
   font-weight: 950;
@@ -13,10 +16,12 @@
   text-transform: uppercase;
 }
 
+/* 섹션의 큰 제목 */
 .heading {
   max-width: 760px;
   margin: 0 auto 16px;
   text-align: center;
+  /* ver02 추가: 제목 브랜드색 */
   color: var(--navy);
   font-size: clamp(32px, 4.5vw, 50px);
   font-weight: 950;
@@ -25,10 +30,12 @@
   text-wrap: balance;
 }
 
+/* 섹션 제목 아래 보조 설명 */
 .description {
   max-width: 650px;
   margin: 0 auto 56px;
   text-align: center;
+  /* ver02 추가: 설명용 보조 글자색 */
   color: var(--muted);
   font-size: 16px;
 }
