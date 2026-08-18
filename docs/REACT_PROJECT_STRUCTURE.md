@@ -134,7 +134,7 @@ App
 - `siteData.js`: 기능 카드, 편지 카드, 앱 화면, 약속 항목 데이터를 배열로 관리한다.
 - `index.css`: CSS 초기화, 기본 글꼴, `:root` 색상 토큰을 정의하는 전역 스타일이다.
 - `*.module.css`: 각 컴포넌트의 Flex 방향, 크기, 간격, 배경색과 배경 이미지를 담당한다.
-- `public/images`: 모든 앱 아이콘과 화면 이미지를 보관하며 `/images/파일명`으로 직접 참조한다.
+- `public/images`: 모든 앱 아이콘과 화면 이미지를 보관한다. React에서는 `/images/파일명`, Pen 디자인에서는 `public/images/파일명`으로 같은 파일을 참조한다.
 - `StoreButton`: Header와 DownloadSection에서 재사용한다.
 - `SectionTitle`: 여러 섹션의 kicker, 제목, 설명 형식을 재사용한다.
 
@@ -203,3 +203,5 @@ function Main() {
 ```html
 <link rel="icon" href="/images/favicon-32.png" />
 ```
+
+[`malgeum-reference.pen`](../malgeum-reference.pen)도 프로젝트 루트의 별도 이미지 폴더를 만들지 않고 같은 `public/images` 파일을 참조한다.

@@ -3,451 +3,571 @@
   "children": [
     {
       "type": "frame",
-      "id": "pageDesktop",
+      "id": "h5nwo",
       "x": 0,
       "y": 0,
       "name": "날씨 - 부엉이 편지 · Desktop 1440",
+      "context": "body",
       "clip": true,
       "width": 1440,
-      "height": 5366,
-      "fill": "$paper",
-      "layout": "none",
+      "height": 5745,
+      "fill": "#fffdf5",
+      "layout": "vertical",
       "children": [
         {
           "type": "frame",
-          "id": "nav",
-          "x": 0,
-          "y": 0,
-          "name": "Nav · 상단 네비게이션",
-          "width": 1440,
-          "height": 66,
-          "fill": "$paper",
-          "stroke": "$navy",
-          "strokeWidth": {
-            "bottom": 2
-          },
-          "layout": "none",
-          "children": [
-            {
-              "type": "rectangle",
-              "cornerRadius": 11,
-              "id": "navIcon",
-              "x": 42,
-              "y": 13,
-              "name": "앱 아이콘",
-              "fill": {
-                "type": "image",
-                "enabled": true,
-                "url": "public/images/app-icon.png",
-                "mode": "fill"
-              },
-              "width": 40,
-              "height": 40
-            },
-            {
-              "type": "text",
-              "id": "navBrand",
-              "x": 94,
-              "y": 22,
-              "name": "브랜드명",
-              "fill": "$navy",
-              "content": "날씨 - 부엉이 편지",
-              "fontFamily": "Noto Sans",
-              "fontSize": 18,
-              "fontWeight": "700"
-            },
-            {
-              "type": "text",
-              "id": "navWeather",
-              "x": 915,
-              "y": 23,
-              "name": "날씨 기능 링크",
-              "fill": "$navy",
-              "content": "날씨 기능",
-              "fontFamily": "Noto Sans",
-              "fontSize": 15,
-              "fontWeight": "700"
-            },
-            {
-              "type": "text",
-              "id": "navLetter",
-              "x": 1012,
-              "y": 23,
-              "name": "부엉이 편지 링크",
-              "fill": "$navy",
-              "content": "부엉이 편지",
-              "fontFamily": "Noto Sans",
-              "fontSize": 15,
-              "fontWeight": "700"
-            },
-            {
-              "type": "text",
-              "id": "navScreen",
-              "x": 1128,
-              "y": 23,
-              "name": "앱 화면 링크",
-              "fill": "$navy",
-              "content": "앱 화면",
-              "fontFamily": "Noto Sans",
-              "fontSize": 15,
-              "fontWeight": "700"
-            },
-            {
-              "type": "frame",
-              "id": "navDownload",
-              "x": 1227,
-              "y": 10,
-              "name": "다운로드 버튼",
-              "width": 165,
-              "height": 46,
-              "fill": "$navy",
-              "cornerRadius": 23,
-              "layout": "none",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "navDownloadLabel",
-                  "x": 0,
-                  "y": 13,
-                  "fill": "$white",
-                  "textGrowth": "fixed-width",
-                  "width": 165,
-                  "content": "다운로드",
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 15,
-                  "fontWeight": "800"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "header",
-          "x": 0,
-          "y": 66,
-          "name": "Header · Hero",
+          "id": "F9SML",
+          "name": "header",
+          "context": "header",
           "clip": true,
-          "width": 1440,
-          "height": 900,
+          "width": "fill_container",
           "fill": {
             "type": "gradient",
             "gradientType": "linear",
             "enabled": true,
-            "rotation": 135,
+            "rotation": -145,
             "size": {
               "height": 1
             },
             "colors": [
               {
-                "color": "$sky",
+                "color": "#61d5f7",
                 "position": 0
               },
               {
-                "color": "$skySoft",
-                "position": 0.62
+                "color": "#b7eeff",
+                "position": 0.54
               },
               {
-                "color": "#FFF2AFFF",
+                "color": "#fff2ba",
                 "position": 1
               }
             ]
           },
-          "layout": "none",
+          "padding": [
+            132,
+            22,
+            88,
+            22
+          ],
+          "alignItems": "center",
           "children": [
             {
               "type": "ellipse",
-              "id": "heroCloudTop",
-              "x": 1190,
-              "y": 65,
-              "name": "뒤쪽 흰색 타원 장식 · 위",
-              "rotation": -8,
-              "fill": "$white",
-              "width": 330,
-              "height": 165,
-              "stroke": "$navy",
-              "strokeWidth": 8
+              "id": "VOw1B",
+              "layoutPosition": "absolute",
+              "x": 1260,
+              "y": 100,
+              "name": "Hero Top Decorative Ellipse",
+              "opacity": 0.95,
+              "fill": "#ffffff",
+              "width": 260,
+              "height": 130,
+              "stroke": "#132f42",
+              "strokeWidth": 8,
+              "strokeAlignment": "inner"
             },
             {
               "type": "ellipse",
-              "id": "heroCloudBottom",
-              "x": -84,
-              "y": 735,
-              "name": "뒤쪽 흰색 타원 장식 · 아래",
-              "rotation": 10,
-              "fill": "$white",
-              "width": 300,
-              "height": 150,
-              "stroke": "$navy",
-              "strokeWidth": 8
-            },
-            {
-              "type": "frame",
-              "id": "heroEyebrow",
-              "x": 120,
-              "y": 150,
-              "name": "Hero 배지",
-              "width": 300,
-              "height": 42,
-              "fill": "$white",
-              "cornerRadius": 21,
-              "stroke": "$navy",
-              "strokeWidth": 2,
-              "layout": "none",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "heroEyebrowLabel",
-                  "x": 18,
-                  "y": 11,
-                  "fill": "$navy",
-                  "content": "☀️  날씨 행동 추천 + 마음 편지",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 14,
-                  "fontWeight": "800"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "id": "heroTitle",
-              "x": 120,
-              "y": 224,
-              "name": "Hero 제목",
-              "fill": "$navy",
-              "textGrowth": "fixed-width-height",
-              "width": 650,
-              "height": 190,
-              "content": "오늘의 하늘부터\n마음속 이야기까지",
-              "lineHeight": 1.08,
-              "fontFamily": "Noto Sans",
-              "fontSize": 64,
-              "fontWeight": "900",
-              "letterSpacing": -2.5
-            },
-            {
-              "type": "text",
-              "id": "heroLead",
-              "x": 120,
-              "y": 445,
-              "name": "Hero 설명",
-              "fill": "$navy",
-              "textGrowth": "fixed-width",
-              "width": 620,
-              "content": "우산·옷차림·미세먼지는 한눈에.\n흐린 날 꺼내지 못한 마음은 부엉이와 함께\n내 말투의 편지로 완성해보세요.",
-              "lineHeight": 1.65,
-              "fontFamily": "Noto Sans",
-              "fontSize": 20,
-              "fontWeight": "500"
-            },
-            {
-              "type": "frame",
-              "id": "heroGoogleButton",
-              "x": 120,
-              "y": 600,
-              "name": "Google Play 버튼",
+              "id": "V9h9eq",
+              "layoutPosition": "absolute",
+              "x": -45,
+              "y": 853.33,
+              "name": "Hero Bottom Decorative Ellipse",
+              "opacity": 0.95,
+              "fill": "#ffffff",
               "width": 210,
-              "height": 64,
-              "fill": "$navy",
-              "cornerRadius": 16,
-              "layout": "none",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "heroGoogleIcon",
-                  "x": 20,
-                  "y": 18,
-                  "fill": "$white",
-                  "content": "▶",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 24,
-                  "fontWeight": "700"
-                },
-                {
-                  "type": "text",
-                  "id": "heroGoogleSmall",
-                  "x": 58,
-                  "y": 10,
-                  "fill": "$white",
-                  "content": "GET IT ON",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 10,
-                  "fontWeight": "500"
-                },
-                {
-                  "type": "text",
-                  "id": "heroGoogleBig",
-                  "x": 58,
-                  "y": 27,
-                  "fill": "$white",
-                  "content": "Google Play",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 20,
-                  "fontWeight": "700"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "heroAppleButton",
-              "x": 346,
-              "y": 600,
-              "name": "App Store 버튼",
-              "width": 210,
-              "height": 64,
-              "fill": "$navy",
-              "cornerRadius": 16,
-              "layout": "none",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "heroAppleIcon",
-                  "x": 19,
-                  "y": 15,
-                  "fill": "$white",
-                  "content": "●",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 27,
-                  "fontWeight": "700"
-                },
-                {
-                  "type": "text",
-                  "id": "heroAppleSmall",
-                  "x": 58,
-                  "y": 10,
-                  "fill": "$white",
-                  "content": "DOWNLOAD ON THE",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 9,
-                  "fontWeight": "500"
-                },
-                {
-                  "type": "text",
-                  "id": "heroAppleBig",
-                  "x": 58,
-                  "y": 27,
-                  "fill": "$white",
-                  "content": "App Store",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 20,
-                  "fontWeight": "700"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "id": "heroLocale",
-              "x": 120,
-              "y": 690,
-              "name": "지원 언어",
-              "fill": "$muted",
-              "content": "한국어 · English · 日本語 · 繁體中文",
-              "fontFamily": "Noto Sans",
-              "fontSize": 14,
-              "fontWeight": "600"
-            },
-            {
-              "type": "frame",
-              "id": "heroPhoneCard",
-              "x": 900,
-              "y": 110,
-              "name": "대표 앱 화면",
-              "rotation": 2,
-              "clip": true,
-              "width": 405,
-              "height": 720,
-              "fill": {
-                "type": "image",
-                "enabled": true,
-                "url": "public/images/owl-01-home.webp",
-                "mode": "fill"
-              },
-              "cornerRadius": 44,
-              "stroke": "$navy",
+              "height": 105,
+              "stroke": "#132f42",
               "strokeWidth": 8,
-              "effect": {
-                "type": "shadow",
-                "shadowType": "outer",
-                "color": "#132F4238",
-                "offset": {
-                  "x": 18,
-                  "y": 22
-                }
-              },
-              "layout": "none"
+              "strokeAlignment": "inner"
             },
             {
               "type": "frame",
-              "id": "heroStickerTop",
-              "x": 1150,
-              "y": 165,
-              "name": "말풍선 · 오늘은 우산 필수",
-              "rotation": -6.000000000000001,
-              "width": 245,
-              "height": 66,
-              "fill": "$cream",
-              "cornerRadius": 18,
-              "stroke": "$navy",
-              "strokeWidth": 4,
-              "effect": {
-                "type": "shadow",
-                "shadowType": "outer",
-                "color": "$navy",
-                "offset": {
-                  "x": 8,
-                  "y": 8
-                }
-              },
+              "id": "waktG",
+              "name": "div",
+              "context": "div",
+              "width": 1160,
+              "height": 693.33,
               "layout": "none",
               "children": [
                 {
-                  "type": "text",
-                  "id": "heroStickerTopLabel",
-                  "x": 22,
-                  "y": 20,
-                  "fill": "$navy",
-                  "content": "오늘은 우산 필수! ☂️",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 17,
-                  "fontWeight": "900"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "heroStickerBottom",
-              "x": 785,
-              "y": 715,
-              "name": "말풍선 · 부엉이가 알려드려요",
-              "rotation": 5,
-              "width": 275,
-              "height": 66,
-              "fill": "$sun",
-              "cornerRadius": 18,
-              "stroke": "$navy",
-              "strokeWidth": 4,
-              "effect": {
-                "type": "shadow",
-                "shadowType": "outer",
-                "color": "$navy",
-                "offset": {
-                  "x": 8,
-                  "y": 8
-                }
-              },
-              "layout": "none",
-              "children": [
+                  "type": "frame",
+                  "id": "bpX3C",
+                  "x": 0,
+                  "y": 121.2,
+                  "name": "div",
+                  "context": "div",
+                  "width": 575.4,
+                  "height": 450.9,
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "AWJWh",
+                      "name": "☀️ 날씨 행동 추천 + 마음 편지",
+                      "context": "div",
+                      "width": 187.91,
+                      "height": 39.44,
+                      "fill": "#fff9e9",
+                      "cornerRadius": 999,
+                      "stroke": "#132f42",
+                      "strokeWidth": 2,
+                      "strokeAlignment": "inner",
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#132f42",
+                        "offset": {
+                          "x": 4,
+                          "y": 5
+                        }
+                      },
+                      "layout": "vertical",
+                      "padding": [
+                        7,
+                        14
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xIcbd",
+                          "fill": "#173346",
+                          "content": "☀️ 날씨 행동 추천 + 마음 편지",
+                          "lineHeight": 1.65,
+                          "fontFamily": "Noto Sans KR",
+                          "fontSize": 13,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "iSG1S",
+                      "name": "spacer",
+                      "width": "fill_container",
+                      "height": 22,
+                      "layout": "none"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "E4XKOl",
+                      "name": "h1",
+                      "context": "h1",
+                      "width": "fill_container",
+                      "height": 164.16,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HhzxS",
+                          "x": 0,
+                          "y": -4,
+                          "name": "오늘의 하늘부터",
+                          "fill": "#173346",
+                          "content": "오늘의 하늘부터",
+                          "lineHeight": 1.08,
+                          "fontFamily": "Noto Sans KR",
+                          "fontSize": 76,
+                          "fontWeight": "950",
+                          "letterSpacing": -2.8
+                        },
+                        {
+                          "type": "text",
+                          "id": "CkKh5",
+                          "x": 0,
+                          "y": 82.07,
+                          "name": "마음속 이야기까지",
+                          "context": "span",
+                          "fill": "#ffffff",
+                          "content": "마음속 이야기까지",
+                          "lineHeight": 1.08,
+                          "fontFamily": "Noto Sans KR",
+                          "fontSize": 76,
+                          "fontWeight": "950",
+                          "letterSpacing": -2.8
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "I1AjN7",
+                      "name": "spacer",
+                      "width": "fill_container",
+                      "height": 27.99,
+                      "layout": "none"
+                    },
+                    {
+                      "type": "text",
+                      "id": "NXapk",
+                      "name": "우산·옷차림·미세먼지는 한눈에. 흐린 날 꺼내지 못한 마음은 부엉이와 함",
+                      "context": "p",
+                      "fill": "#284b61",
+                      "textGrowth": "fixed-width-height",
+                      "width": "fill_container",
+                      "height": 99,
+                      "content": "우산·옷차림·미세먼지는 한눈에.\n흐린 날 꺼내지 못한 마음은 부엉이와 함께 내 말투의 편지로 완성해보세요.",
+                      "lineHeight": 1.65,
+                      "fontFamily": "Noto Sans KR",
+                      "fontSize": 20,
+                      "fontWeight": "650",
+                      "letterSpacing": -0.3
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ySk6i",
+                      "name": "spacer",
+                      "width": "fill_container",
+                      "height": 34,
+                      "layout": "none"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "g3dhc",
+                      "name": "div",
+                      "context": "div",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "N4z0Rc",
+                          "name": "a",
+                          "context": "a",
+                          "width": 190,
+                          "fill": "#132f42",
+                          "cornerRadius": 14,
+                          "stroke": "#132f42",
+                          "strokeWidth": 2,
+                          "strokeAlignment": "inner",
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "#ffffffb8",
+                            "offset": {
+                              "x": 5,
+                              "y": 6
+                            }
+                          },
+                          "gap": 11,
+                          "padding": [
+                            14,
+                            20
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "zUTDR",
+                              "name": "▶",
+                              "context": "span",
+                              "fill": "#ffffff",
+                              "textGrowth": "fixed-width",
+                              "width": 26,
+                              "content": "▶",
+                              "lineHeight": 1,
+                              "textAlign": "center",
+                              "fontFamily": "Noto Sans KR",
+                              "fontSize": 23,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "dfRdz",
+                              "name": "span",
+                              "context": "span",
+                              "height": 31.5,
+                              "layout": "vertical",
+                              "gap": 4,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "G2yQMt",
+                                  "name": "GET IT ON",
+                                  "context": "small",
+                                  "opacity": 0.78,
+                                  "fill": "#ffffff",
+                                  "content": "GET IT ON",
+                                  "lineHeight": 1.1,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 10,
+                                  "fontWeight": "650"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "fY3Z6",
+                                  "name": "Google Play",
+                                  "context": "strong",
+                                  "fill": "#ffffff",
+                                  "content": "Google Play",
+                                  "lineHeight": 1.1,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 15,
+                                  "fontWeight": "900"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ZS6gZ",
+                          "name": "a",
+                          "context": "a",
+                          "width": 190,
+                          "fill": "#132f42",
+                          "cornerRadius": 14,
+                          "stroke": "#132f42",
+                          "strokeWidth": 2,
+                          "strokeAlignment": "inner",
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "#ffffffb8",
+                            "offset": {
+                              "x": 5,
+                              "y": 6
+                            }
+                          },
+                          "gap": 11,
+                          "padding": [
+                            14,
+                            20
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "l11WZ",
+                              "name": "●",
+                              "context": "span",
+                              "fill": "#ffffff",
+                              "textGrowth": "fixed-width",
+                              "width": 26,
+                              "content": "●",
+                              "lineHeight": 1,
+                              "textAlign": "center",
+                              "fontFamily": "Noto Sans KR",
+                              "fontSize": 23,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "oPtLv",
+                              "name": "span",
+                              "context": "span",
+                              "height": 31.5,
+                              "layout": "vertical",
+                              "gap": 4,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "ZkGGg",
+                                  "name": "DOWNLOAD ON THE",
+                                  "context": "small",
+                                  "opacity": 0.78,
+                                  "fill": "#ffffff",
+                                  "content": "DOWNLOAD ON THE",
+                                  "lineHeight": 1.1,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 10,
+                                  "fontWeight": "650"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "Z6e7lX",
+                                  "name": "App Store",
+                                  "context": "strong",
+                                  "fill": "#ffffff",
+                                  "content": "App Store",
+                                  "lineHeight": 1.1,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 15,
+                                  "fontWeight": "900"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ySLP0",
+                      "name": "spacer",
+                      "width": "fill_container",
+                      "height": 18,
+                      "layout": "none"
+                    },
+                    {
+                      "type": "text",
+                      "id": "H2YKo",
+                      "name": "한국어 · English · 日本語 · 繁體中文",
+                      "context": "p",
+                      "fill": "#132f42b8",
+                      "content": "한국어 · English · 日本語 · 繁體中文",
+                      "lineHeight": 1.65,
+                      "fontFamily": "Noto Sans KR",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
                 {
-                  "type": "text",
-                  "id": "heroStickerBottomLabel",
-                  "x": 20,
-                  "y": 20,
-                  "fill": "$navy",
-                  "content": "부엉이가 알려드려요 🦉",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 17,
-                  "fontWeight": "900"
+                  "type": "frame",
+                  "id": "KpvS4",
+                  "x": 704.7,
+                  "y": 0,
+                  "name": "div",
+                  "context": "div",
+                  "width": 390,
+                  "height": 693.33,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "yOqrJ",
+                      "x": 13.43,
+                      "y": -7.23,
+                      "name": "div",
+                      "context": "div",
+                      "rotation": -2.2,
+                      "clip": true,
+                      "width": 390,
+                      "height": 693,
+                      "fill": "#fff9e9",
+                      "cornerRadius": 42,
+                      "stroke": "#132f42",
+                      "strokeWidth": 8,
+                      "strokeAlignment": "inner",
+                      "effect": [
+                        {
+                          "type": "shadow",
+                          "shadowType": "outer",
+                          "color": "#132f4238",
+                          "offset": {
+                            "x": 18,
+                            "y": 20
+                          }
+                        },
+                        {
+                          "type": "shadow",
+                          "shadowType": "outer",
+                          "color": "#132f4229",
+                          "offset": {
+                            "x": 0,
+                            "y": 22
+                          },
+                          "blur": 55
+                        }
+                      ],
+                      "layout": "vertical",
+                      "padding": 8,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "toi5L",
+                          "name": "img",
+                          "context": "img",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "public/images/owl-01-home.webp",
+                            "mode": "fill"
+                          },
+                          "width": 374,
+                          "height": 677
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "W6tNl",
+                      "x": 300.55,
+                      "y": 55.98,
+                      "name": "오늘은 우산 필수! ☂️",
+                      "context": "div",
+                      "rotation": 5,
+                      "width": 169,
+                      "height": 52,
+                      "fill": "#fff9e9",
+                      "cornerRadius": 16,
+                      "stroke": "#132f42",
+                      "strokeWidth": 3,
+                      "strokeAlignment": "inner",
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#132f42",
+                        "offset": {
+                          "x": 5,
+                          "y": 6
+                        }
+                      },
+                      "layout": "vertical",
+                      "padding": [
+                        10,
+                        15
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "YQQl6",
+                          "fill": "#173346",
+                          "content": "오늘은 우산 필수! ☂️",
+                          "lineHeight": 1.65,
+                          "fontFamily": "Noto Sans KR",
+                          "fontSize": 16,
+                          "fontWeight": "950"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "F1stX",
+                      "x": -94.9,
+                      "y": 563.54,
+                      "name": "부엉이가 알려드려요 🦉",
+                      "context": "div",
+                      "rotation": -5,
+                      "width": 188,
+                      "height": 52,
+                      "fill": "#ffe76b",
+                      "cornerRadius": 16,
+                      "stroke": "#132f42",
+                      "strokeWidth": 3,
+                      "strokeAlignment": "inner",
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#132f42",
+                        "offset": {
+                          "x": 5,
+                          "y": 6
+                        }
+                      },
+                      "layout": "vertical",
+                      "padding": [
+                        10,
+                        15
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "tbjk0",
+                          "fill": "#173346",
+                          "content": "부엉이가 알려드려요 🦉",
+                          "lineHeight": 1.65,
+                          "fontFamily": "Noto Sans KR",
+                          "fontSize": 16,
+                          "fontWeight": "950"
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -455,374 +575,771 @@
         },
         {
           "type": "frame",
-          "id": "main",
-          "x": 0,
-          "y": 966,
-          "name": "Main",
-          "width": 1440,
-          "height": 4140,
-          "layout": "none",
+          "id": "BDKA6",
+          "name": "main",
+          "context": "main",
+          "width": "fill_container",
+          "layout": "vertical",
           "children": [
             {
               "type": "frame",
-              "id": "weatherSection",
-              "x": 0,
-              "y": 0,
-              "name": "Section · 날씨 기능",
-              "width": 1440,
-              "height": 790,
-              "fill": "$paper",
-              "layout": "none",
+              "id": "cK9An",
+              "name": "section",
+              "context": "section",
+              "width": "fill_container",
+              "fill": "#fffdf5",
+              "layout": "vertical",
+              "padding": [
+                104,
+                22
+              ],
+              "alignItems": "center",
               "children": [
                 {
-                  "type": "text",
-                  "id": "weatherKicker",
-                  "x": 120,
-                  "y": 75,
-                  "fill": "$skyDark",
-                  "textGrowth": "fixed-width",
-                  "width": 1200,
-                  "content": "WEATHER FOR REAL LIFE",
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 14,
-                  "fontWeight": "900",
-                  "letterSpacing": 2
-                },
-                {
-                  "type": "text",
-                  "id": "weatherTitle",
-                  "x": 320,
-                  "y": 112,
-                  "fill": "$navy",
-                  "textGrowth": "fixed-width",
-                  "width": 800,
-                  "content": "숫자를 읽는 대신\n오늘 할 일을 바로 보세요",
-                  "lineHeight": 1.2,
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 42,
-                  "fontWeight": "900",
-                  "letterSpacing": -1.5
-                },
-                {
-                  "type": "text",
-                  "id": "weatherSub",
-                  "x": 330,
-                  "y": 225,
-                  "fill": "$muted",
-                  "textGrowth": "fixed-width",
-                  "width": 780,
-                  "content": "복잡한 예보를 내 생활에 맞는 행동으로 바꿉니다. 필요한 정보는 빠르게, 더 궁금한 것은 부엉이에게 물어보세요.",
-                  "lineHeight": 1.6,
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 17,
-                  "fontWeight": "500"
-                },
-                {
                   "type": "frame",
-                  "id": "weatherCard1",
-                  "x": 120,
-                  "y": 325,
-                  "name": "우산과 옷차림 추천",
-                  "width": 370,
-                  "height": 185,
-                  "fill": "$white",
-                  "cornerRadius": 22,
-                  "stroke": "$navy",
-                  "strokeWidth": 2,
-                  "layout": "none",
+                  "id": "RxOhV",
+                  "name": "div",
+                  "context": "div",
+                  "width": 1120,
+                  "height": 754.22,
+                  "layout": "vertical",
                   "children": [
                     {
                       "type": "text",
-                      "id": "weatherIcon1",
-                      "x": 24,
-                      "y": 24,
-                      "content": "☂️",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 34,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "weatherCardTitle1",
-                      "x": 78,
-                      "y": 28,
-                      "fill": "$navy",
-                      "content": "우산과 옷차림 추천",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 20,
-                      "fontWeight": "900"
-                    },
-                    {
-                      "type": "text",
-                      "id": "weatherCardDesc1",
-                      "x": 24,
-                      "y": 90,
-                      "fill": "$muted",
+                      "id": "Yboz9",
+                      "name": "WEATHER FOR REAL LIFE",
+                      "context": "p",
+                      "fill": "#279ed0",
                       "textGrowth": "fixed-width",
-                      "width": 320,
-                      "content": "강수확률과 체감온도를 오늘 바로 실천할 수 있는 한 문장으로 알려드려요.",
-                      "lineHeight": 1.55,
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 15,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "weatherCard2",
-                  "x": 535,
-                  "y": 325,
-                  "name": "공기와 건강 정보",
-                  "width": 370,
-                  "height": 185,
-                  "fill": "$white",
-                  "cornerRadius": 22,
-                  "stroke": "$navy",
-                  "strokeWidth": 2,
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "weatherIcon2",
-                      "x": 24,
-                      "y": 24,
-                      "content": "😷",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 34,
-                      "fontWeight": "normal"
+                      "width": "fill_container",
+                      "content": "WEATHER FOR REAL LIFE",
+                      "lineHeight": 1.65,
+                      "textAlign": "center",
+                      "fontFamily": "Noto Sans KR",
+                      "fontSize": 13,
+                      "fontWeight": "950",
+                      "letterSpacing": 1.7
                     },
                     {
-                      "type": "text",
-                      "id": "weatherCardTitle2",
-                      "x": 78,
-                      "y": 28,
-                      "fill": "$navy",
-                      "content": "공기와 건강 정보",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 20,
-                      "fontWeight": "900"
+                      "type": "frame",
+                      "id": "I6n9G",
+                      "name": "spacer",
+                      "width": "fill_container",
+                      "height": 11,
+                      "layout": "none"
                     },
                     {
-                      "type": "text",
-                      "id": "weatherCardDesc2",
-                      "x": 24,
-                      "y": 90,
-                      "fill": "$muted",
-                      "textGrowth": "fixed-width",
-                      "width": 320,
-                      "content": "미세먼지, 자외선, 꽃가루, 습도까지 민감한 날 먼저 챙길 수 있어요.",
-                      "lineHeight": 1.55,
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 15,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "weatherCard3",
-                  "x": 950,
-                  "y": 325,
-                  "name": "시간별·주간 예보",
-                  "width": 370,
-                  "height": 185,
-                  "fill": "$white",
-                  "cornerRadius": 22,
-                  "stroke": "$navy",
-                  "strokeWidth": 2,
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "weatherIcon3",
-                      "x": 24,
-                      "y": 24,
-                      "content": "🗓️",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 34,
-                      "fontWeight": "normal"
+                      "type": "frame",
+                      "id": "N3Rbjy",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZWAWX",
+                          "name": "숫자를 읽는 대신 오늘 할 일을 바로 보세요",
+                          "context": "h2",
+                          "fill": "#132f42",
+                          "textGrowth": "fixed-width",
+                          "width": 760,
+                          "content": "숫자를 읽는 대신\n오늘 할 일을 바로 보세요",
+                          "lineHeight": 1.17,
+                          "textAlign": "center",
+                          "fontFamily": "Noto Sans KR",
+                          "fontSize": 50,
+                          "fontWeight": "950",
+                          "letterSpacing": -1.8
+                        }
+                      ]
                     },
                     {
-                      "type": "text",
-                      "id": "weatherCardTitle3",
-                      "x": 78,
-                      "y": 28,
-                      "fill": "$navy",
-                      "content": "시간별·주간 예보",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 20,
-                      "fontWeight": "900"
+                      "type": "frame",
+                      "id": "sAjJG",
+                      "name": "spacer",
+                      "width": "fill_container",
+                      "height": 16,
+                      "layout": "none"
                     },
                     {
-                      "type": "text",
-                      "id": "weatherCardDesc3",
-                      "x": 24,
-                      "y": 90,
-                      "fill": "$muted",
-                      "textGrowth": "fixed-width",
-                      "width": 320,
-                      "content": "몇 시에 비가 시작되는지, 이번 주 흐름은 어떤지 보기 쉽게 정리해요.",
-                      "lineHeight": 1.55,
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 15,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "weatherCard4",
-                  "x": 120,
-                  "y": 545,
-                  "name": "내 생활에 맞춘 안내",
-                  "width": 370,
-                  "height": 185,
-                  "fill": "$white",
-                  "cornerRadius": 22,
-                  "stroke": "$navy",
-                  "strokeWidth": 2,
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "weatherIcon4",
-                      "x": 24,
-                      "y": 24,
-                      "content": "🚶",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 34,
-                      "fontWeight": "normal"
+                      "type": "frame",
+                      "id": "Zvg6b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "SUriB",
+                          "name": "복잡한 예보를 내 생활에 맞는 행동으로 바꿉니다. 필요한 정보는 빠르게,",
+                          "context": "p",
+                          "fill": "#607686",
+                          "textGrowth": "fixed-width-height",
+                          "width": 650,
+                          "height": 52.78,
+                          "content": "복잡한 예보를 내 생활에 맞는 행동으로 바꿉니다. 필요한 정보는 빠르게, 더 궁금한 것은 부엉이에게 물어보세요.",
+                          "lineHeight": 1.65,
+                          "textAlign": "center",
+                          "fontFamily": "Noto Sans KR",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
                     },
                     {
-                      "type": "text",
-                      "id": "weatherCardTitle4",
-                      "x": 78,
-                      "y": 28,
-                      "fill": "$navy",
-                      "content": "내 생활에 맞춘 안내",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 20,
-                      "fontWeight": "900"
+                      "type": "frame",
+                      "id": "lRSiC",
+                      "name": "spacer",
+                      "width": "fill_container",
+                      "height": 56,
+                      "layout": "none"
                     },
                     {
-                      "type": "text",
-                      "id": "weatherCardDesc4",
-                      "x": 24,
-                      "y": 90,
-                      "fill": "$muted",
-                      "textGrowth": "fixed-width",
-                      "width": 320,
-                      "content": "출퇴근 시간, 운동, 옷차림 취향과 건강 민감도를 반영해 더 나답게 안내해요.",
-                      "lineHeight": 1.55,
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 15,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "weatherCard5",
-                  "x": 535,
-                  "y": 545,
-                  "name": "맑음이와 날씨 대화",
-                  "width": 370,
-                  "height": 185,
-                  "fill": "$white",
-                  "cornerRadius": 22,
-                  "stroke": "$navy",
-                  "strokeWidth": 2,
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "weatherIcon5",
-                      "x": 24,
-                      "y": 24,
-                      "content": "💬",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 34,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "weatherCardTitle5",
-                      "x": 78,
-                      "y": 28,
-                      "fill": "$navy",
-                      "content": "맑음이와 날씨 대화",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 20,
-                      "fontWeight": "900"
-                    },
-                    {
-                      "type": "text",
-                      "id": "weatherCardDesc5",
-                      "x": 24,
-                      "y": 90,
-                      "fill": "$muted",
-                      "textGrowth": "fixed-width",
-                      "width": 320,
-                      "content": "“저녁에 뛰어도 될까?”처럼 오늘 날씨가 궁금할 때 자연스럽게 물어보세요.",
-                      "lineHeight": 1.55,
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 15,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "weatherCard6",
-                  "x": 950,
-                  "y": 545,
-                  "name": "위젯과 선택형 알림",
-                  "width": 370,
-                  "height": 185,
-                  "fill": "$white",
-                  "cornerRadius": 22,
-                  "stroke": "$navy",
-                  "strokeWidth": 2,
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "weatherIcon6",
-                      "x": 24,
-                      "y": 24,
-                      "content": "🔔",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 34,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "weatherCardTitle6",
-                      "x": 78,
-                      "y": 28,
-                      "fill": "$navy",
-                      "content": "위젯과 선택형 알림",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 20,
-                      "fontWeight": "900"
-                    },
-                    {
-                      "type": "text",
-                      "id": "weatherCardDesc6",
-                      "x": 24,
-                      "y": 90,
-                      "fill": "$muted",
-                      "textGrowth": "fixed-width",
-                      "width": 320,
-                      "content": "앱을 열지 않아도 중요한 변화와 오늘 필요한 준비를 놓치지 않게 도와줘요.",
-                      "lineHeight": 1.55,
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 15,
-                      "fontWeight": "normal"
+                      "type": "frame",
+                      "id": "R0zGLH",
+                      "name": "div",
+                      "context": "div",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "o5p0s",
+                          "width": "fill_container",
+                          "height": 230,
+                          "gap": 20,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "bo7LY",
+                              "name": "article",
+                              "context": "article",
+                              "clip": true,
+                              "width": "fill_container",
+                              "height": 230,
+                              "fill": "#ffffff",
+                              "cornerRadius": 22,
+                              "stroke": "#132f42",
+                              "strokeWidth": 2,
+                              "strokeAlignment": "inner",
+                              "effect": {
+                                "type": "shadow",
+                                "shadowType": "outer",
+                                "color": "#132f42",
+                                "offset": {
+                                  "x": 6,
+                                  "y": 7
+                                }
+                              },
+                              "layout": "vertical",
+                              "padding": [
+                                30,
+                                27,
+                                42.47,
+                                27
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "vBhDo",
+                                  "name": "☂️",
+                                  "context": "div",
+                                  "width": 54,
+                                  "height": 54,
+                                  "fill": "#dff6ff",
+                                  "cornerRadius": 16,
+                                  "stroke": "#132f42",
+                                  "strokeWidth": 2,
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "justifyContent": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "L9Oop",
+                                      "fill": "#173346",
+                                      "content": "☂️",
+                                      "lineHeight": 1.65,
+                                      "fontFamily": "Noto Sans KR",
+                                      "fontSize": 28,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "s09eCR",
+                                  "name": "spacer",
+                                  "width": "fill_container",
+                                  "height": 18,
+                                  "layout": "none"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "c3p5Mr",
+                                  "name": "우산과 옷차림 추천",
+                                  "context": "h3",
+                                  "fill": "#173346",
+                                  "content": "우산과 옷차림 추천",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 19,
+                                  "fontWeight": "950",
+                                  "letterSpacing": -0.5
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "u2j7gh",
+                                  "name": "spacer",
+                                  "width": "fill_container",
+                                  "height": 8,
+                                  "layout": "none"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "yqPhg",
+                                  "name": "강수확률과 체감온도를 오늘 바로 실천할 수 있는 한 문장으로 알려드려요.",
+                                  "context": "p",
+                                  "fill": "#607686",
+                                  "textGrowth": "fixed-width-height",
+                                  "width": "fill_container",
+                                  "height": 46.19,
+                                  "content": "강수확률과 체감온도를 오늘 바로 실천할 수 있는 한 문장으로 알려드려요.",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "YJ6eO",
+                              "name": "article",
+                              "context": "article",
+                              "clip": true,
+                              "width": "fill_container",
+                              "height": 230,
+                              "fill": "#ffffff",
+                              "cornerRadius": 22,
+                              "stroke": "#132f42",
+                              "strokeWidth": 2,
+                              "strokeAlignment": "inner",
+                              "effect": {
+                                "type": "shadow",
+                                "shadowType": "outer",
+                                "color": "#132f42",
+                                "offset": {
+                                  "x": 6,
+                                  "y": 7
+                                }
+                              },
+                              "layout": "vertical",
+                              "padding": [
+                                30,
+                                27,
+                                42.47,
+                                27
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "J7Ny9z",
+                                  "name": "😷",
+                                  "context": "div",
+                                  "width": 54,
+                                  "height": 54,
+                                  "fill": "#fff1a9",
+                                  "cornerRadius": 16,
+                                  "stroke": "#132f42",
+                                  "strokeWidth": 2,
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "justifyContent": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "lvoKS",
+                                      "fill": "#173346",
+                                      "content": "😷",
+                                      "lineHeight": 1.65,
+                                      "fontFamily": "Noto Sans KR",
+                                      "fontSize": 28,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "pZfCr",
+                                  "name": "spacer",
+                                  "width": "fill_container",
+                                  "height": 18,
+                                  "layout": "none"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "Jpa7l",
+                                  "name": "공기와 건강 정보",
+                                  "context": "h3",
+                                  "fill": "#173346",
+                                  "content": "공기와 건강 정보",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 19,
+                                  "fontWeight": "950",
+                                  "letterSpacing": -0.5
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "Orvxu",
+                                  "name": "spacer",
+                                  "width": "fill_container",
+                                  "height": 8,
+                                  "layout": "none"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "fJv9f",
+                                  "name": "미세먼지, 자외선, 꽃가루, 습도까지 민감한 날 먼저 챙길 수 있어요.",
+                                  "context": "p",
+                                  "fill": "#607686",
+                                  "textGrowth": "fixed-width-height",
+                                  "width": "fill_container",
+                                  "height": 46.19,
+                                  "content": "미세먼지, 자외선, 꽃가루, 습도까지 민감한 날 먼저 챙길 수 있어요.",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "NY1db",
+                              "name": "article",
+                              "context": "article",
+                              "clip": true,
+                              "width": "fill_container",
+                              "height": 230,
+                              "fill": "#ffffff",
+                              "cornerRadius": 22,
+                              "stroke": "#132f42",
+                              "strokeWidth": 2,
+                              "strokeAlignment": "inner",
+                              "effect": {
+                                "type": "shadow",
+                                "shadowType": "outer",
+                                "color": "#132f42",
+                                "offset": {
+                                  "x": 6,
+                                  "y": 7
+                                }
+                              },
+                              "layout": "vertical",
+                              "padding": [
+                                30,
+                                27,
+                                42.47,
+                                27
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "N0wSa",
+                                  "name": "🗓️",
+                                  "context": "div",
+                                  "width": 54,
+                                  "height": 54,
+                                  "fill": "#ffd8d0",
+                                  "cornerRadius": 16,
+                                  "stroke": "#132f42",
+                                  "strokeWidth": 2,
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "justifyContent": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "oKXcq",
+                                      "fill": "#173346",
+                                      "content": "🗓️",
+                                      "lineHeight": 1.65,
+                                      "fontFamily": "Noto Sans KR",
+                                      "fontSize": 28,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "uDKia",
+                                  "name": "spacer",
+                                  "width": "fill_container",
+                                  "height": 18,
+                                  "layout": "none"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "G3kZak",
+                                  "name": "시간별·주간 예보",
+                                  "context": "h3",
+                                  "fill": "#173346",
+                                  "content": "시간별·주간 예보",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 19,
+                                  "fontWeight": "950",
+                                  "letterSpacing": -0.5
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "E6lUeG",
+                                  "name": "spacer",
+                                  "width": "fill_container",
+                                  "height": 8,
+                                  "layout": "none"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "UDKap",
+                                  "name": "몇 시에 비가 시작되는지, 이번 주 흐름은 어떤지 보기 쉽게 정리해요.",
+                                  "context": "p",
+                                  "fill": "#607686",
+                                  "textGrowth": "fixed-width-height",
+                                  "width": "fill_container",
+                                  "height": 46.19,
+                                  "content": "몇 시에 비가 시작되는지, 이번 주 흐름은 어떤지 보기 쉽게 정리해요.",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Z7Wvfv",
+                          "width": "fill_container",
+                          "height": 230,
+                          "gap": 20,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Nlej8",
+                              "name": "article",
+                              "context": "article",
+                              "clip": true,
+                              "width": "fill_container",
+                              "height": 230,
+                              "fill": "#ffffff",
+                              "cornerRadius": 22,
+                              "stroke": "#132f42",
+                              "strokeWidth": 2,
+                              "strokeAlignment": "inner",
+                              "effect": {
+                                "type": "shadow",
+                                "shadowType": "outer",
+                                "color": "#132f42",
+                                "offset": {
+                                  "x": 6,
+                                  "y": 7
+                                }
+                              },
+                              "layout": "vertical",
+                              "padding": [
+                                30,
+                                27,
+                                42.47,
+                                27
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "EDNir",
+                                  "name": "🚶",
+                                  "context": "div",
+                                  "width": 54,
+                                  "height": 54,
+                                  "fill": "#dff6ff",
+                                  "cornerRadius": 16,
+                                  "stroke": "#132f42",
+                                  "strokeWidth": 2,
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "justifyContent": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "lmcX3",
+                                      "fill": "#173346",
+                                      "content": "🚶",
+                                      "lineHeight": 1.65,
+                                      "fontFamily": "Noto Sans KR",
+                                      "fontSize": 28,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "WC9dt",
+                                  "name": "spacer",
+                                  "width": "fill_container",
+                                  "height": 18,
+                                  "layout": "none"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "Fd7Hr",
+                                  "name": "내 생활에 맞춘 안내",
+                                  "context": "h3",
+                                  "fill": "#173346",
+                                  "content": "내 생활에 맞춘 안내",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 19,
+                                  "fontWeight": "950",
+                                  "letterSpacing": -0.5
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "dhjl7",
+                                  "name": "spacer",
+                                  "width": "fill_container",
+                                  "height": 8,
+                                  "layout": "none"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "v6DlO",
+                                  "name": "출퇴근 시간, 운동, 옷차림 취향과 건강 민감도를 반영해 더 나답게 안내",
+                                  "context": "p",
+                                  "fill": "#607686",
+                                  "textGrowth": "fixed-width-height",
+                                  "width": "fill_container",
+                                  "height": 46.19,
+                                  "content": "출퇴근 시간, 운동, 옷차림 취향과 건강 민감도를 반영해 더 나답게 안내해요.",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "RZnKm",
+                              "name": "article",
+                              "context": "article",
+                              "clip": true,
+                              "width": "fill_container",
+                              "height": 230,
+                              "fill": "#ffffff",
+                              "cornerRadius": 22,
+                              "stroke": "#132f42",
+                              "strokeWidth": 2,
+                              "strokeAlignment": "inner",
+                              "effect": {
+                                "type": "shadow",
+                                "shadowType": "outer",
+                                "color": "#132f42",
+                                "offset": {
+                                  "x": 6,
+                                  "y": 7
+                                }
+                              },
+                              "layout": "vertical",
+                              "padding": [
+                                30,
+                                27,
+                                42.47,
+                                27
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "xva8g",
+                                  "name": "💬",
+                                  "context": "div",
+                                  "width": 54,
+                                  "height": 54,
+                                  "fill": "#fff1a9",
+                                  "cornerRadius": 16,
+                                  "stroke": "#132f42",
+                                  "strokeWidth": 2,
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "justifyContent": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "X54nnN",
+                                      "fill": "#173346",
+                                      "content": "💬",
+                                      "lineHeight": 1.65,
+                                      "fontFamily": "Noto Sans KR",
+                                      "fontSize": 28,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "e4ybq",
+                                  "name": "spacer",
+                                  "width": "fill_container",
+                                  "height": 18,
+                                  "layout": "none"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "eYhjs",
+                                  "name": "맑음이와 날씨 대화",
+                                  "context": "h3",
+                                  "fill": "#173346",
+                                  "content": "맑음이와 날씨 대화",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 19,
+                                  "fontWeight": "950",
+                                  "letterSpacing": -0.5
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "T7NLO",
+                                  "name": "spacer",
+                                  "width": "fill_container",
+                                  "height": 8,
+                                  "layout": "none"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "uARNA",
+                                  "name": "“저녁에 뛰어도 될까?”처럼 오늘 날씨가 궁금할 때 자연스럽게 물어보세요",
+                                  "context": "p",
+                                  "fill": "#607686",
+                                  "textGrowth": "fixed-width-height",
+                                  "width": "fill_container",
+                                  "height": 46.19,
+                                  "content": "“저녁에 뛰어도 될까?”처럼 오늘 날씨가 궁금할 때 자연스럽게 물어보세요.",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "KkMaK",
+                              "name": "article",
+                              "context": "article",
+                              "clip": true,
+                              "width": "fill_container",
+                              "height": 230,
+                              "fill": "#ffffff",
+                              "cornerRadius": 22,
+                              "stroke": "#132f42",
+                              "strokeWidth": 2,
+                              "strokeAlignment": "inner",
+                              "effect": {
+                                "type": "shadow",
+                                "shadowType": "outer",
+                                "color": "#132f42",
+                                "offset": {
+                                  "x": 6,
+                                  "y": 7
+                                }
+                              },
+                              "layout": "vertical",
+                              "padding": [
+                                30,
+                                27,
+                                42.47,
+                                27
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "E69nOb",
+                                  "name": "🔔",
+                                  "context": "div",
+                                  "width": 54,
+                                  "height": 54,
+                                  "fill": "#ffd8d0",
+                                  "cornerRadius": 16,
+                                  "stroke": "#132f42",
+                                  "strokeWidth": 2,
+                                  "strokeAlignment": "inner",
+                                  "layout": "vertical",
+                                  "justifyContent": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "LdEyU",
+                                      "fill": "#173346",
+                                      "content": "🔔",
+                                      "lineHeight": 1.65,
+                                      "fontFamily": "Noto Sans KR",
+                                      "fontSize": 28,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "S4nE3",
+                                  "name": "spacer",
+                                  "width": "fill_container",
+                                  "height": 18,
+                                  "layout": "none"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "ztcvh",
+                                  "name": "위젯과 선택형 알림",
+                                  "context": "h3",
+                                  "fill": "#173346",
+                                  "content": "위젯과 선택형 알림",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 19,
+                                  "fontWeight": "950",
+                                  "letterSpacing": -0.5
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "OXhA3",
+                                  "name": "spacer",
+                                  "width": "fill_container",
+                                  "height": 8,
+                                  "layout": "none"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "zfBJj",
+                                  "name": "앱을 열지 않아도 중요한 변화와 오늘 필요한 준비를 놓치지 않게 도와줘요",
+                                  "context": "p",
+                                  "fill": "#607686",
+                                  "textGrowth": "fixed-width-height",
+                                  "width": "fill_container",
+                                  "height": 46.19,
+                                  "content": "앱을 열지 않아도 중요한 변화와 오늘 필요한 준비를 놓치지 않게 도와줘요.",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
@@ -830,160 +1347,289 @@
             },
             {
               "type": "frame",
-              "id": "letterSection",
-              "x": 0,
-              "y": 790,
-              "name": "Section · 부엉이 편지",
-              "width": 1440,
-              "height": 620,
-              "fill": "$cream",
-              "layout": "none",
+              "id": "FbyYG",
+              "name": "section",
+              "context": "section",
+              "width": "fill_container",
+              "fill": "#fff9e9",
+              "stroke": "#132f42",
+              "strokeWidth": {
+                "top": 2,
+                "bottom": 2
+              },
+              "strokeAlignment": "inner",
+              "layout": "vertical",
+              "padding": [
+                106,
+                22
+              ],
+              "alignItems": "center",
               "children": [
                 {
-                  "type": "text",
-                  "id": "letterKicker",
-                  "x": 120,
-                  "y": 70,
-                  "fill": "$coral",
-                  "textGrowth": "fixed-width",
-                  "width": 1200,
-                  "content": "OWL LETTER",
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 14,
-                  "fontWeight": "900",
-                  "letterSpacing": 2
-                },
-                {
-                  "type": "text",
-                  "id": "letterTitle",
-                  "x": 320,
-                  "y": 108,
-                  "fill": "$navy",
-                  "textGrowth": "fixed-width",
-                  "width": 800,
-                  "content": "날씨가 흐린 날에는\n마음에도 귀를 기울여요",
-                  "lineHeight": 1.2,
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 42,
-                  "fontWeight": "900",
-                  "letterSpacing": -1.5
-                },
-                {
-                  "type": "text",
-                  "id": "letterSub",
-                  "x": 335,
-                  "y": 220,
-                  "fill": "$muted",
-                  "textGrowth": "fixed-width",
-                  "width": 770,
-                  "content": "오늘의 하늘을 매개로 마음을 나누고, 쉽게 꺼내지 못했던 말은 편지로 차분히 정리할 수 있어요.",
-                  "lineHeight": 1.6,
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 17,
-                  "fontWeight": "normal"
-                },
-                {
                   "type": "frame",
-                  "id": "letterCard1",
-                  "x": 120,
-                  "y": 330,
-                  "name": "부엉이 우체국",
-                  "width": 580,
-                  "height": 220,
-                  "fill": "$white",
-                  "cornerRadius": 26,
-                  "stroke": "$navy",
-                  "strokeWidth": 2,
+                  "id": "C0DBW",
+                  "name": "div",
+                  "context": "div",
+                  "width": 1120,
+                  "height": 425.41,
                   "layout": "none",
                   "children": [
                     {
                       "type": "text",
-                      "id": "letterIcon1",
-                      "x": 34,
-                      "y": 60,
-                      "content": "🦉",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 64,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "letterCardTitle1",
-                      "x": 132,
-                      "y": 45,
-                      "fill": "$navy",
-                      "content": "부엉이 우체국",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 24,
-                      "fontWeight": "900"
-                    },
-                    {
-                      "type": "text",
-                      "id": "letterCardDesc1",
-                      "x": 132,
-                      "y": 92,
-                      "fill": "$muted",
+                      "id": "lp97q",
+                      "x": 0,
+                      "y": 0,
+                      "name": "OWL LETTER",
+                      "context": "p",
+                      "fill": "#279ed0",
                       "textGrowth": "fixed-width",
-                      "width": 405,
-                      "content": "빈 부엉이에게 쪽지를 맡기면 오늘의 하늘과 어울리는 누군가에게 날아갑니다. 익명 쪽지와 연결된 친구의 이야기를 한곳에서 만나요.",
-                      "lineHeight": 1.55,
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 15,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "letterCard2",
-                  "x": 740,
-                  "y": 330,
-                  "name": "내 말투의 마음 편지",
-                  "width": 580,
-                  "height": 220,
-                  "fill": "$white",
-                  "cornerRadius": 26,
-                  "stroke": "$navy",
-                  "strokeWidth": 2,
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "letterIcon2",
-                      "x": 34,
-                      "y": 60,
-                      "content": "💌",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 64,
-                      "fontWeight": "normal"
+                      "width": 1120,
+                      "content": "OWL LETTER",
+                      "lineHeight": 1.65,
+                      "textAlign": "center",
+                      "fontFamily": "Noto Sans KR",
+                      "fontSize": 13,
+                      "fontWeight": "950",
+                      "letterSpacing": 1.7
                     },
                     {
                       "type": "text",
-                      "id": "letterCardTitle2",
-                      "x": 132,
-                      "y": 45,
-                      "fill": "$navy",
-                      "content": "내 말투의 마음 편지",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 24,
-                      "fontWeight": "900"
-                    },
-                    {
-                      "type": "text",
-                      "id": "letterCardDesc2",
-                      "x": 132,
-                      "y": 92,
-                      "fill": "$muted",
+                      "id": "r4Phr5",
+                      "x": 180,
+                      "y": 32.43,
+                      "name": "날씨가 흐린 날에는 마음에도 귀를 기울여요",
+                      "context": "h2",
+                      "fill": "#132f42",
                       "textGrowth": "fixed-width",
-                      "width": 405,
-                      "content": "누구에게 어떤 말을 전하고 싶은지 질문에 답하면 부엉이가 초안을 정리해요. 제목과 내용은 자유롭게 고치고, 마지막 전송은 직접 결정합니다.",
-                      "lineHeight": 1.55,
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 15,
+                      "width": 760,
+                      "content": "날씨가 흐린 날에는\n마음에도 귀를 기울여요",
+                      "lineHeight": 1.17,
+                      "textAlign": "center",
+                      "fontFamily": "Noto Sans KR",
+                      "fontSize": 50,
+                      "fontWeight": "950",
+                      "letterSpacing": -1.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "zRvI9",
+                      "x": 235,
+                      "y": 165.43,
+                      "name": "오늘의 하늘을 매개로 마음을 나누고, 쉽게 꺼내지 못했던 말은 편지로 차",
+                      "context": "p",
+                      "fill": "#607686",
+                      "textGrowth": "fixed-width",
+                      "width": 650,
+                      "content": "오늘의 하늘을 매개로 마음을 나누고, 쉽게 꺼내지 못했던 말은 편지로 차분히 정리할 수 있어요.",
+                      "lineHeight": 1.65,
+                      "textAlign": "center",
+                      "fontFamily": "Noto Sans KR",
+                      "fontSize": 16,
                       "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "gRK4d",
+                      "x": 0,
+                      "y": 247.83,
+                      "name": "div",
+                      "context": "div",
+                      "width": 1120,
+                      "gap": 24,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "hZAwZ",
+                          "name": "article",
+                          "context": "article",
+                          "width": "fill_container",
+                          "height": 177.58,
+                          "fill": "#fffdf5",
+                          "cornerRadius": 22,
+                          "stroke": "#132f42",
+                          "strokeWidth": 2,
+                          "strokeAlignment": "inner",
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "#132f42",
+                            "offset": {
+                              "x": 7,
+                              "y": 8
+                            }
+                          },
+                          "layout": "none",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "nsFFO",
+                              "x": 32,
+                              "y": 38.78,
+                              "name": "🦉",
+                              "context": "div",
+                              "width": 100,
+                              "height": 100,
+                              "fill": "#dff6ff",
+                              "cornerRadius": 50,
+                              "stroke": "#132f42",
+                              "strokeWidth": 2,
+                              "strokeAlignment": "inner",
+                              "layout": "vertical",
+                              "justifyContent": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "AIadb",
+                                  "fill": "#173346",
+                                  "content": "🦉",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 48,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "HyGIa",
+                              "x": 152,
+                              "y": 32,
+                              "name": "div",
+                              "context": "div",
+                              "width": 343,
+                              "height": 113.58,
+                              "layout": "vertical",
+                              "gap": 7.99,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "MD6kw",
+                                  "name": "부엉이 우체국",
+                                  "context": "h3",
+                                  "fill": "#173346",
+                                  "content": "부엉이 우체국",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 22,
+                                  "fontWeight": "950",
+                                  "letterSpacing": -0.7
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "jvEqL",
+                                  "name": "빈 부엉이에게 쪽지를 맡기면 오늘의 하늘과 어울리는 누군가에게 날아갑니다",
+                                  "context": "p",
+                                  "fill": "#607686",
+                                  "textGrowth": "fixed-width-height",
+                                  "width": "fill_container",
+                                  "height": 69.28,
+                                  "content": "빈 부엉이에게 쪽지를 맡기면 오늘의 하늘과 어울리는 누군가에게 날아갑니다. 익명 쪽지와 연결된 친구의 이야기를 한곳에서 만나요.",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "L1voR7",
+                          "name": "article",
+                          "context": "article",
+                          "width": "fill_container",
+                          "height": 177.58,
+                          "fill": "#fffdf5",
+                          "cornerRadius": 22,
+                          "stroke": "#132f42",
+                          "strokeWidth": 2,
+                          "strokeAlignment": "inner",
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "#132f42",
+                            "offset": {
+                              "x": 7,
+                              "y": 8
+                            }
+                          },
+                          "layout": "none",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "hvg8g",
+                              "x": 32,
+                              "y": 38.78,
+                              "name": "💌",
+                              "context": "div",
+                              "width": 100,
+                              "height": 100,
+                              "fill": "#ffe897",
+                              "cornerRadius": 50,
+                              "stroke": "#132f42",
+                              "strokeWidth": 2,
+                              "strokeAlignment": "inner",
+                              "layout": "vertical",
+                              "justifyContent": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "sQTuu",
+                                  "fill": "#173346",
+                                  "content": "💌",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 48,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "yG7Qv",
+                              "x": 152,
+                              "y": 32,
+                              "name": "div",
+                              "context": "div",
+                              "width": 343,
+                              "height": 113.58,
+                              "layout": "vertical",
+                              "gap": 7.99,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "zFp9h",
+                                  "name": "내 말투의 마음 편지",
+                                  "context": "h3",
+                                  "fill": "#173346",
+                                  "content": "내 말투의 마음 편지",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 22,
+                                  "fontWeight": "950",
+                                  "letterSpacing": -0.7
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "B8aIBt",
+                                  "name": "누구에게 어떤 말을 전하고 싶은지 질문에 답하면 부엉이가 초안을 정리해요",
+                                  "context": "p",
+                                  "fill": "#607686",
+                                  "textGrowth": "fixed-width-height",
+                                  "width": "fill_container",
+                                  "height": 69.28,
+                                  "content": "누구에게 어떤 말을 전하고 싶은지 질문에 답하면 부엉이가 초안을 정리해요. 제목과 내용은 자유롭게 고치고, 마지막 전송은 직접 결정합니다.",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
@@ -991,476 +1637,852 @@
             },
             {
               "type": "frame",
-              "id": "screensSection",
-              "x": 0,
-              "y": 1410,
-              "name": "Section · 앱 화면",
-              "width": 1440,
-              "height": 1580,
-              "fill": "$skySoft",
-              "layout": "none",
+              "id": "J8ARBw",
+              "name": "section",
+              "context": "section",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "#dff6ff",
+              "layout": "vertical",
+              "padding": [
+                104,
+                22
+              ],
+              "alignItems": "center",
               "children": [
                 {
-                  "type": "text",
-                  "id": "screensKicker",
-                  "x": 120,
-                  "y": 70,
-                  "fill": "$skyDark",
-                  "textGrowth": "fixed-width",
-                  "width": 1200,
-                  "content": "INSIDE THE APP",
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 14,
-                  "fontWeight": "900",
-                  "letterSpacing": 2
-                },
-                {
-                  "type": "text",
-                  "id": "screensTitle",
-                  "x": 320,
-                  "y": 108,
-                  "fill": "$navy",
-                  "textGrowth": "fixed-width",
-                  "width": 800,
-                  "content": "매일 펼쳐보고 싶은\n다정한 날씨 경험",
-                  "lineHeight": 1.2,
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 42,
-                  "fontWeight": "900",
-                  "letterSpacing": -1.5
-                },
-                {
-                  "type": "text",
-                  "id": "screensSub",
-                  "x": 335,
-                  "y": 220,
-                  "fill": "$muted",
-                  "textGrowth": "fixed-width",
-                  "width": 770,
-                  "content": "실용적인 날씨부터 마음을 나누는 순간까지, 최신 앱 화면을 만나보세요.",
-                  "lineHeight": 1.6,
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 17,
-                  "fontWeight": "normal"
-                },
-                {
                   "type": "frame",
-                  "id": "screen1",
-                  "x": 155,
-                  "y": 320,
-                  "name": "홈 화면",
-                  "clip": true,
-                  "width": 300,
-                  "height": 533,
-                  "fill": {
-                    "type": "image",
-                    "enabled": true,
-                    "url": "public/images/owl-01-home.webp",
-                    "mode": "fill"
-                  },
-                  "cornerRadius": 30,
-                  "stroke": "$navy",
-                  "strokeWidth": 4,
-                  "layout": "none"
-                },
-                {
-                  "type": "text",
-                  "id": "screenCaption1",
-                  "x": 155,
-                  "y": 872,
-                  "fill": "$navy",
-                  "textGrowth": "fixed-width",
-                  "width": 300,
-                  "content": "오늘 할 일을 먼저",
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 17,
-                  "fontWeight": "800"
-                },
-                {
-                  "type": "frame",
-                  "id": "screen2",
-                  "x": 570,
-                  "y": 320,
-                  "name": "부엉이 우체국 화면",
-                  "clip": true,
-                  "width": 300,
-                  "height": 533,
-                  "fill": {
-                    "type": "image",
-                    "enabled": true,
-                    "url": "public/images/owl-02-office.webp",
-                    "mode": "fill"
-                  },
-                  "cornerRadius": 30,
-                  "stroke": "$navy",
-                  "strokeWidth": 4,
-                  "layout": "none"
-                },
-                {
-                  "type": "text",
-                  "id": "screenCaption2",
-                  "x": 570,
-                  "y": 872,
-                  "fill": "$navy",
-                  "textGrowth": "fixed-width",
-                  "width": 300,
-                  "content": "오늘의 하늘이 편지를 배달해요",
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 17,
-                  "fontWeight": "800"
-                },
-                {
-                  "type": "frame",
-                  "id": "screen3",
-                  "x": 985,
-                  "y": 320,
-                  "name": "마음 편지 화면",
-                  "clip": true,
-                  "width": 300,
-                  "height": 533,
-                  "fill": {
-                    "type": "image",
-                    "enabled": true,
-                    "url": "public/images/owl-03-letter.webp",
-                    "mode": "fill"
-                  },
-                  "cornerRadius": 30,
-                  "stroke": "$navy",
-                  "strokeWidth": 4,
-                  "layout": "none"
-                },
-                {
-                  "type": "text",
-                  "id": "screenCaption3",
-                  "x": 985,
-                  "y": 872,
-                  "fill": "$navy",
-                  "textGrowth": "fixed-width",
-                  "width": 300,
-                  "content": "꺼내지 못한 말을 편지로",
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 17,
-                  "fontWeight": "800"
-                },
-                {
-                  "type": "frame",
-                  "id": "screen4",
-                  "x": 155,
-                  "y": 955,
-                  "name": "날씨 브리핑 화면",
-                  "clip": true,
-                  "width": 300,
-                  "height": 533,
-                  "fill": {
-                    "type": "image",
-                    "enabled": true,
-                    "url": "public/images/owl-04-brief.webp",
-                    "mode": "fill"
-                  },
-                  "cornerRadius": 30,
-                  "stroke": "$navy",
-                  "strokeWidth": 4,
-                  "layout": "none"
-                },
-                {
-                  "type": "text",
-                  "id": "screenCaption4",
-                  "x": 155,
-                  "y": 1507,
-                  "fill": "$navy",
-                  "textGrowth": "fixed-width",
-                  "width": 300,
-                  "content": "필요한 날씨만 브리핑",
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 17,
-                  "fontWeight": "800"
-                },
-                {
-                  "type": "frame",
-                  "id": "screen5",
-                  "x": 570,
-                  "y": 955,
-                  "name": "날씨 대화 화면",
-                  "clip": true,
-                  "width": 300,
-                  "height": 533,
-                  "fill": {
-                    "type": "image",
-                    "enabled": true,
-                    "url": "public/images/owl-05-chat.webp",
-                    "mode": "fill"
-                  },
-                  "cornerRadius": 30,
-                  "stroke": "$navy",
-                  "strokeWidth": 4,
-                  "layout": "none"
-                },
-                {
-                  "type": "text",
-                  "id": "screenCaption5",
-                  "x": 570,
-                  "y": 1507,
-                  "fill": "$navy",
-                  "textGrowth": "fixed-width",
-                  "width": 300,
-                  "content": "궁금한 날씨를 대화로",
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 17,
-                  "fontWeight": "800"
-                },
-                {
-                  "type": "frame",
-                  "id": "screen6",
-                  "x": 985,
-                  "y": 955,
-                  "name": "날씨 성격 화면",
-                  "clip": true,
-                  "width": 300,
-                  "height": 533,
-                  "fill": {
-                    "type": "image",
-                    "enabled": true,
-                    "url": "public/images/owl-06-personality.webp",
-                    "mode": "fill"
-                  },
-                  "cornerRadius": 30,
-                  "stroke": "$navy",
-                  "strokeWidth": 4,
-                  "layout": "none"
-                },
-                {
-                  "type": "text",
-                  "id": "screenCaption6",
-                  "x": 985,
-                  "y": 1507,
-                  "fill": "$navy",
-                  "textGrowth": "fixed-width",
-                  "width": 300,
-                  "content": "나의 날씨 성격 발견",
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 17,
-                  "fontWeight": "800"
+                  "id": "sjoq5",
+                  "name": "div",
+                  "context": "div",
+                  "width": 1120,
+                  "height": 1621.1,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "H2plmY",
+                      "x": 0,
+                      "y": 0,
+                      "name": "INSIDE THE APP",
+                      "context": "p",
+                      "fill": "#279ed0",
+                      "textGrowth": "fixed-width",
+                      "width": 1120,
+                      "content": "INSIDE THE APP",
+                      "lineHeight": 1.65,
+                      "textAlign": "center",
+                      "fontFamily": "Noto Sans KR",
+                      "fontSize": 13,
+                      "fontWeight": "950",
+                      "letterSpacing": 1.7
+                    },
+                    {
+                      "type": "text",
+                      "id": "Mo3A1",
+                      "x": 180,
+                      "y": 32.44,
+                      "name": "매일 펼쳐보고 싶은 다정한 날씨 경험",
+                      "context": "h2",
+                      "fill": "#132f42",
+                      "textGrowth": "fixed-width",
+                      "width": 760,
+                      "content": "매일 펼쳐보고 싶은\n다정한 날씨 경험",
+                      "lineHeight": 1.17,
+                      "textAlign": "center",
+                      "fontFamily": "Noto Sans KR",
+                      "fontSize": 50,
+                      "fontWeight": "950",
+                      "letterSpacing": -1.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "S3lfR",
+                      "x": 235,
+                      "y": 165.44,
+                      "name": "실용적인 날씨부터 마음을 나누는 순간까지, 최신 앱 화면을 만나보세요.",
+                      "context": "p",
+                      "fill": "#607686",
+                      "textGrowth": "fixed-width",
+                      "width": 650,
+                      "content": "실용적인 날씨부터 마음을 나누는 순간까지, 최신 앱 화면을 만나보세요.",
+                      "lineHeight": 1.65,
+                      "textAlign": "center",
+                      "fontFamily": "Noto Sans KR",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "B8UW7T",
+                      "x": 0,
+                      "y": 247.83,
+                      "name": "div",
+                      "context": "div",
+                      "width": 1120,
+                      "height": 1373.3,
+                      "layout": "vertical",
+                      "gap": 26,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "USgvJ",
+                          "width": "fill_container",
+                          "height": 673.65,
+                          "gap": 26,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "UahWn",
+                              "name": "div",
+                              "context": "div",
+                              "width": "fill_container",
+                              "height": 673.65,
+                              "layout": "vertical",
+                              "gap": 16,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "OOfOE",
+                                  "name": "div",
+                                  "context": "div",
+                                  "clip": true,
+                                  "fill": "#132f42",
+                                  "cornerRadius": 25,
+                                  "stroke": "#132f42",
+                                  "strokeWidth": 4,
+                                  "strokeAlignment": "inner",
+                                  "effect": {
+                                    "type": "shadow",
+                                    "shadowType": "outer",
+                                    "color": "#132f4233",
+                                    "offset": {
+                                      "x": 9,
+                                      "y": 11
+                                    }
+                                  },
+                                  "layout": "vertical",
+                                  "padding": 4,
+                                  "children": [
+                                    {
+                                      "type": "rectangle",
+                                      "id": "jicoO",
+                                      "name": "img",
+                                      "context": "img",
+                                      "fill": {
+                                        "type": "image",
+                                        "enabled": true,
+                                        "url": "public/images/owl-01-home.webp",
+                                        "mode": "fill"
+                                      },
+                                      "width": 348,
+                                      "height": 624.9
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "EocRX",
+                                  "name": "오늘 할 일을 먼저",
+                                  "context": "p",
+                                  "fill": "#173346",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "오늘 할 일을 먼저",
+                                  "lineHeight": 1.65,
+                                  "textAlign": "center",
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 15,
+                                  "fontWeight": "900"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "DzPr1",
+                              "name": "div",
+                              "context": "div",
+                              "width": "fill_container",
+                              "height": 673.65,
+                              "layout": "vertical",
+                              "gap": 16,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "l1J9TN",
+                                  "name": "div",
+                                  "context": "div",
+                                  "clip": true,
+                                  "fill": "#132f42",
+                                  "cornerRadius": 25,
+                                  "stroke": "#132f42",
+                                  "strokeWidth": 4,
+                                  "strokeAlignment": "inner",
+                                  "effect": {
+                                    "type": "shadow",
+                                    "shadowType": "outer",
+                                    "color": "#132f4233",
+                                    "offset": {
+                                      "x": 9,
+                                      "y": 11
+                                    }
+                                  },
+                                  "layout": "vertical",
+                                  "padding": 4,
+                                  "children": [
+                                    {
+                                      "type": "rectangle",
+                                      "id": "Z0nNvN",
+                                      "name": "img",
+                                      "context": "img",
+                                      "fill": {
+                                        "type": "image",
+                                        "enabled": true,
+                                        "url": "public/images/owl-02-office.webp",
+                                        "mode": "fill"
+                                      },
+                                      "width": 348,
+                                      "height": 624.9
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "M1wCp",
+                                  "name": "오늘의 하늘이 편지를 배달해요",
+                                  "context": "p",
+                                  "fill": "#173346",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "오늘의 하늘이 편지를 배달해요",
+                                  "lineHeight": 1.65,
+                                  "textAlign": "center",
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 15,
+                                  "fontWeight": "900"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "G6vZH",
+                              "name": "div",
+                              "context": "div",
+                              "width": "fill_container",
+                              "height": 673.65,
+                              "layout": "vertical",
+                              "gap": 16,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "it154",
+                                  "name": "div",
+                                  "context": "div",
+                                  "clip": true,
+                                  "fill": "#132f42",
+                                  "cornerRadius": 25,
+                                  "stroke": "#132f42",
+                                  "strokeWidth": 4,
+                                  "strokeAlignment": "inner",
+                                  "effect": {
+                                    "type": "shadow",
+                                    "shadowType": "outer",
+                                    "color": "#132f4233",
+                                    "offset": {
+                                      "x": 9,
+                                      "y": 11
+                                    }
+                                  },
+                                  "layout": "vertical",
+                                  "padding": 4,
+                                  "children": [
+                                    {
+                                      "type": "rectangle",
+                                      "id": "l4lF8",
+                                      "name": "img",
+                                      "context": "img",
+                                      "fill": {
+                                        "type": "image",
+                                        "enabled": true,
+                                        "url": "public/images/owl-03-letter.webp",
+                                        "mode": "fill"
+                                      },
+                                      "width": 348,
+                                      "height": 624.9
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "XffPI",
+                                  "name": "꺼내지 못한 말을 편지로",
+                                  "context": "p",
+                                  "fill": "#173346",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "꺼내지 못한 말을 편지로",
+                                  "lineHeight": 1.65,
+                                  "textAlign": "center",
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 15,
+                                  "fontWeight": "900"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "P1flkl",
+                          "width": "fill_container",
+                          "height": 673.65,
+                          "gap": 26,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "dVyIQ",
+                              "name": "div",
+                              "context": "div",
+                              "width": "fill_container",
+                              "height": 673.65,
+                              "layout": "vertical",
+                              "gap": 16,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "LjLyV",
+                                  "name": "div",
+                                  "context": "div",
+                                  "clip": true,
+                                  "fill": "#132f42",
+                                  "cornerRadius": 25,
+                                  "stroke": "#132f42",
+                                  "strokeWidth": 4,
+                                  "strokeAlignment": "inner",
+                                  "effect": {
+                                    "type": "shadow",
+                                    "shadowType": "outer",
+                                    "color": "#132f4233",
+                                    "offset": {
+                                      "x": 9,
+                                      "y": 11
+                                    }
+                                  },
+                                  "layout": "vertical",
+                                  "padding": 4,
+                                  "children": [
+                                    {
+                                      "type": "rectangle",
+                                      "id": "IvqDM",
+                                      "name": "img",
+                                      "context": "img",
+                                      "fill": {
+                                        "type": "image",
+                                        "enabled": true,
+                                        "url": "public/images/owl-04-brief.webp",
+                                        "mode": "fill"
+                                      },
+                                      "width": 348,
+                                      "height": 624.9
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "rKrqJ",
+                                  "name": "필요한 날씨만 브리핑",
+                                  "context": "p",
+                                  "fill": "#173346",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "필요한 날씨만 브리핑",
+                                  "lineHeight": 1.65,
+                                  "textAlign": "center",
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 15,
+                                  "fontWeight": "900"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "J6Zs2",
+                              "name": "div",
+                              "context": "div",
+                              "width": "fill_container",
+                              "height": 673.65,
+                              "layout": "vertical",
+                              "gap": 16,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "teSTz",
+                                  "name": "div",
+                                  "context": "div",
+                                  "clip": true,
+                                  "fill": "#132f42",
+                                  "cornerRadius": 25,
+                                  "stroke": "#132f42",
+                                  "strokeWidth": 4,
+                                  "strokeAlignment": "inner",
+                                  "effect": {
+                                    "type": "shadow",
+                                    "shadowType": "outer",
+                                    "color": "#132f4233",
+                                    "offset": {
+                                      "x": 9,
+                                      "y": 11
+                                    }
+                                  },
+                                  "layout": "vertical",
+                                  "padding": 4,
+                                  "children": [
+                                    {
+                                      "type": "rectangle",
+                                      "id": "Yr3E3",
+                                      "name": "img",
+                                      "context": "img",
+                                      "fill": {
+                                        "type": "image",
+                                        "enabled": true,
+                                        "url": "public/images/owl-05-chat.webp",
+                                        "mode": "fill"
+                                      },
+                                      "width": 348,
+                                      "height": 624.9
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "YTaFZ",
+                                  "name": "궁금한 날씨를 대화로",
+                                  "context": "p",
+                                  "fill": "#173346",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "궁금한 날씨를 대화로",
+                                  "lineHeight": 1.65,
+                                  "textAlign": "center",
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 15,
+                                  "fontWeight": "900"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "z5ES2",
+                              "name": "div",
+                              "context": "div",
+                              "width": "fill_container",
+                              "height": 673.65,
+                              "layout": "vertical",
+                              "gap": 16,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "Mms8Y",
+                                  "name": "div",
+                                  "context": "div",
+                                  "clip": true,
+                                  "fill": "#132f42",
+                                  "cornerRadius": 25,
+                                  "stroke": "#132f42",
+                                  "strokeWidth": 4,
+                                  "strokeAlignment": "inner",
+                                  "effect": {
+                                    "type": "shadow",
+                                    "shadowType": "outer",
+                                    "color": "#132f4233",
+                                    "offset": {
+                                      "x": 9,
+                                      "y": 11
+                                    }
+                                  },
+                                  "layout": "vertical",
+                                  "padding": 4,
+                                  "children": [
+                                    {
+                                      "type": "rectangle",
+                                      "id": "V7NU9",
+                                      "name": "img",
+                                      "context": "img",
+                                      "fill": {
+                                        "type": "image",
+                                        "enabled": true,
+                                        "url": "public/images/owl-06-personality.webp",
+                                        "mode": "fill"
+                                      },
+                                      "width": 348,
+                                      "height": 624.9
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "QXEZ9",
+                                  "name": "나의 날씨 성격 발견",
+                                  "context": "p",
+                                  "fill": "#173346",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "나의 날씨 성격 발견",
+                                  "lineHeight": 1.65,
+                                  "textAlign": "center",
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 15,
+                                  "fontWeight": "900"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
             {
               "type": "frame",
-              "id": "promiseSection",
-              "x": 0,
-              "y": 2990,
-              "name": "Section · 사용자 선택권",
-              "width": 1440,
-              "height": 620,
-              "fill": "$navy",
-              "layout": "none",
+              "id": "R5iXBo",
+              "name": "section",
+              "context": "section",
+              "width": "fill_container",
+              "fill": "#132f42",
+              "layout": "vertical",
+              "padding": [
+                104,
+                22
+              ],
+              "alignItems": "center",
               "children": [
                 {
-                  "type": "text",
-                  "id": "promiseKicker",
-                  "x": 120,
-                  "y": 70,
-                  "fill": "$sun",
-                  "textGrowth": "fixed-width",
-                  "width": 1200,
-                  "content": "OUR PROMISE",
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 14,
-                  "fontWeight": "900",
-                  "letterSpacing": 2
-                },
-                {
-                  "type": "text",
-                  "id": "promiseTitle",
-                  "x": 320,
-                  "y": 108,
-                  "fill": "$white",
-                  "textGrowth": "fixed-width",
-                  "width": 800,
-                  "content": "선택권은 언제나 사용자에게",
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 42,
-                  "fontWeight": "900",
-                  "letterSpacing": -1.5
-                },
-                {
-                  "type": "text",
-                  "id": "promiseSub",
-                  "x": 335,
-                  "y": 180,
-                  "fill": "#DDEAF1FF",
-                  "textGrowth": "fixed-width",
-                  "width": 770,
-                  "content": "날씨도 편지도 사적인 정보인 만큼, 필요한 순간에 필요한 만큼만 사용합니다.",
-                  "lineHeight": 1.6,
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 17,
-                  "fontWeight": "normal"
-                },
-                {
                   "type": "frame",
-                  "id": "promiseCard1",
-                  "x": 120,
-                  "y": 285,
-                  "name": "위치 권한은 선택",
-                  "width": 370,
-                  "height": 225,
-                  "fill": "#FFFFFF12",
-                  "cornerRadius": 22,
-                  "stroke": "#FFFFFF35",
-                  "strokeWidth": 2,
+                  "id": "I0pAUh",
+                  "name": "div",
+                  "context": "div",
+                  "width": 1120,
+                  "height": 373.91,
                   "layout": "none",
                   "children": [
                     {
                       "type": "text",
-                      "id": "promiseCheck1",
-                      "x": 24,
-                      "y": 24,
-                      "fill": "$sun",
-                      "content": "✓",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 32,
-                      "fontWeight": "900"
-                    },
-                    {
-                      "type": "text",
-                      "id": "promiseCardTitle1",
-                      "x": 72,
-                      "y": 28,
-                      "fill": "$white",
-                      "content": "위치 권한은 선택",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 20,
-                      "fontWeight": "900"
-                    },
-                    {
-                      "type": "text",
-                      "id": "promiseCardDesc1",
-                      "x": 24,
-                      "y": 92,
-                      "fill": "#DDEAF1FF",
+                      "id": "BPUaW",
+                      "x": 0,
+                      "y": 0,
+                      "name": "OUR PROMISE",
+                      "context": "p",
+                      "fill": "#78ddff",
                       "textGrowth": "fixed-width",
-                      "width": 320,
-                      "content": "현재 위치를 허용하지 않아도 도시를 직접 선택해 날씨를 확인할 수 있습니다.",
-                      "lineHeight": 1.6,
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 15,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "promiseCard2",
-                  "x": 535,
-                  "y": 285,
-                  "name": "편지는 직접 확인하고 전송",
-                  "width": 370,
-                  "height": 225,
-                  "fill": "#FFFFFF12",
-                  "cornerRadius": 22,
-                  "stroke": "#FFFFFF35",
-                  "strokeWidth": 2,
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "promiseCheck2",
-                      "x": 24,
-                      "y": 24,
-                      "fill": "$sun",
-                      "content": "✓",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 32,
-                      "fontWeight": "900"
+                      "width": 1120,
+                      "content": "OUR PROMISE",
+                      "lineHeight": 1.65,
+                      "textAlign": "center",
+                      "fontFamily": "Noto Sans KR",
+                      "fontSize": 13,
+                      "fontWeight": "950",
+                      "letterSpacing": 1.7
                     },
                     {
                       "type": "text",
-                      "id": "promiseCardTitle2",
-                      "x": 72,
-                      "y": 28,
-                      "fill": "$white",
-                      "content": "편지는 직접 확인하고 전송",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 20,
-                      "fontWeight": "900"
-                    },
-                    {
-                      "type": "text",
-                      "id": "promiseCardDesc2",
-                      "x": 24,
-                      "y": 92,
-                      "fill": "#DDEAF1FF",
+                      "id": "J1zmcI",
+                      "x": 180,
+                      "y": 32.44,
+                      "name": "선택권은 언제나 사용자에게",
+                      "context": "h2",
+                      "fill": "#ffffff",
                       "textGrowth": "fixed-width",
-                      "width": 320,
-                      "content": "마음 편지 초안은 자유롭게 고치고, 기기의 메일 앱에서 마지막으로 확인한 뒤 직접 보냅니다.",
-                      "lineHeight": 1.6,
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 15,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "promiseCard3",
-                  "x": 950,
-                  "y": 285,
-                  "name": "핵심 날씨 기능은 무료",
-                  "width": 370,
-                  "height": 225,
-                  "fill": "#FFFFFF12",
-                  "cornerRadius": 22,
-                  "stroke": "#FFFFFF35",
-                  "strokeWidth": 2,
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "promiseCheck3",
-                      "x": 24,
-                      "y": 24,
-                      "fill": "$sun",
-                      "content": "✓",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 32,
-                      "fontWeight": "900"
+                      "width": 760,
+                      "content": "선택권은 언제나 사용자에게",
+                      "lineHeight": 1.17,
+                      "textAlign": "center",
+                      "fontFamily": "Noto Sans KR",
+                      "fontSize": 50,
+                      "fontWeight": "950",
+                      "letterSpacing": -1.8
                     },
                     {
                       "type": "text",
-                      "id": "promiseCardTitle3",
-                      "x": 72,
-                      "y": 28,
-                      "fill": "$white",
-                      "content": "핵심 날씨 기능은 무료",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 20,
-                      "fontWeight": "900"
-                    },
-                    {
-                      "type": "text",
-                      "id": "promiseCardDesc3",
-                      "x": 24,
-                      "y": 92,
-                      "fill": "#DDEAF1FF",
+                      "id": "axprC",
+                      "x": 235,
+                      "y": 106.94,
+                      "name": "날씨도 편지도 사적인 정보인 만큼, 필요한 순간에 필요한 만큼만 사용합니",
+                      "context": "p",
+                      "fill": "#ffffffab",
                       "textGrowth": "fixed-width",
-                      "width": 320,
-                      "content": "기본 날씨 기능은 무료입니다. 추가 테마와 이용량을 위한 프리미엄은 선택 사항입니다.",
-                      "lineHeight": 1.6,
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 15,
+                      "width": 650,
+                      "content": "날씨도 편지도 사적인 정보인 만큼, 필요한 순간에 필요한 만큼만 사용합니다.",
+                      "lineHeight": 1.65,
+                      "textAlign": "center",
+                      "fontFamily": "Noto Sans KR",
+                      "fontSize": 16,
                       "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DN2Gm",
+                      "x": 0,
+                      "y": 189.33,
+                      "name": "div",
+                      "context": "div",
+                      "width": 1120,
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "qQ25c",
+                          "name": "article",
+                          "context": "article",
+                          "width": "fill_container",
+                          "height": 184.58,
+                          "fill": "#ffffff0f",
+                          "cornerRadius": 20,
+                          "stroke": "#ffffff29",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
+                          "layout": "vertical",
+                          "padding": 28,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "j3jhKI",
+                              "name": "✓",
+                              "context": "div",
+                              "width": 34,
+                              "height": 34,
+                              "fill": "#ffcf3d",
+                              "cornerRadius": 50,
+                              "layout": "vertical",
+                              "justifyContent": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "P1QJnC",
+                                  "fill": "#132f42",
+                                  "content": "✓",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 16,
+                                  "fontWeight": "950"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "y798nU",
+                              "name": "spacer",
+                              "width": "fill_container",
+                              "height": 15,
+                              "layout": "none"
+                            },
+                            {
+                              "type": "text",
+                              "id": "lc03V",
+                              "name": "위치 권한은 선택",
+                              "context": "h3",
+                              "fill": "#ffffff",
+                              "content": "위치 권한은 선택",
+                              "lineHeight": 1.65,
+                              "fontFamily": "Noto Sans KR",
+                              "fontSize": 17,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "VSjhi",
+                              "name": "spacer",
+                              "width": "fill_container",
+                              "height": 7,
+                              "layout": "none"
+                            },
+                            {
+                              "type": "text",
+                              "id": "nwHxS",
+                              "name": "현재 위치를 허용하지 않아도 도시를 직접 선택해 날씨를 확인할 수 있습니",
+                              "context": "p",
+                              "fill": "#ffffffad",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 44.53,
+                              "content": "현재 위치를 허용하지 않아도 도시를 직접 선택해 날씨를 확인할 수 있습니다.",
+                              "lineHeight": 1.65,
+                              "fontFamily": "Noto Sans KR",
+                              "fontSize": 13.5,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "rwaMr",
+                          "name": "article",
+                          "context": "article",
+                          "width": "fill_container",
+                          "height": 184.58,
+                          "fill": "#ffffff0f",
+                          "cornerRadius": 20,
+                          "stroke": "#ffffff29",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
+                          "layout": "vertical",
+                          "padding": 28,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "B3XT4",
+                              "name": "✓",
+                              "context": "div",
+                              "width": 34,
+                              "height": 34,
+                              "fill": "#ffcf3d",
+                              "cornerRadius": 50,
+                              "layout": "vertical",
+                              "justifyContent": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "jRA5W",
+                                  "fill": "#132f42",
+                                  "content": "✓",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 16,
+                                  "fontWeight": "950"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "a8uqF",
+                              "name": "spacer",
+                              "width": "fill_container",
+                              "height": 15,
+                              "layout": "none"
+                            },
+                            {
+                              "type": "text",
+                              "id": "mQah6",
+                              "name": "편지는 직접 확인하고 전송",
+                              "context": "h3",
+                              "fill": "#ffffff",
+                              "content": "편지는 직접 확인하고 전송",
+                              "lineHeight": 1.65,
+                              "fontFamily": "Noto Sans KR",
+                              "fontSize": 17,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "PDogF",
+                              "name": "spacer",
+                              "width": "fill_container",
+                              "height": 7,
+                              "layout": "none"
+                            },
+                            {
+                              "type": "text",
+                              "id": "w62SAm",
+                              "name": "마음 편지 초안은 자유롭게 고치고, 기기의 메일 앱에서 마지막으로 확인한",
+                              "context": "p",
+                              "fill": "#ffffffad",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 44.53,
+                              "content": "마음 편지 초안은 자유롭게 고치고, 기기의 메일 앱에서 마지막으로 확인한 뒤 직접 보냅니다.",
+                              "lineHeight": 1.65,
+                              "fontFamily": "Noto Sans KR",
+                              "fontSize": 13.5,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "KwOiD",
+                          "name": "article",
+                          "context": "article",
+                          "width": "fill_container",
+                          "height": 184.58,
+                          "fill": "#ffffff0f",
+                          "cornerRadius": 20,
+                          "stroke": "#ffffff29",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
+                          "layout": "vertical",
+                          "padding": 28,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "EMZ4K",
+                              "name": "✓",
+                              "context": "div",
+                              "width": 34,
+                              "height": 34,
+                              "fill": "#ffcf3d",
+                              "cornerRadius": 50,
+                              "layout": "vertical",
+                              "justifyContent": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "LlBxt",
+                                  "fill": "#132f42",
+                                  "content": "✓",
+                                  "lineHeight": 1.65,
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 16,
+                                  "fontWeight": "950"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "M47HWu",
+                              "name": "spacer",
+                              "width": "fill_container",
+                              "height": 15,
+                              "layout": "none"
+                            },
+                            {
+                              "type": "text",
+                              "id": "JpiQc",
+                              "name": "핵심 날씨 기능은 무료",
+                              "context": "h3",
+                              "fill": "#ffffff",
+                              "content": "핵심 날씨 기능은 무료",
+                              "lineHeight": 1.65,
+                              "fontFamily": "Noto Sans KR",
+                              "fontSize": 17,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "VEm68",
+                              "name": "spacer",
+                              "width": "fill_container",
+                              "height": 7,
+                              "layout": "none"
+                            },
+                            {
+                              "type": "text",
+                              "id": "jDJkF",
+                              "name": "기본 날씨 기능은 무료입니다. 추가 테마와 이용량을 위한 프리미엄은 선택",
+                              "context": "p",
+                              "fill": "#ffffffad",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 44.53,
+                              "content": "기본 날씨 기능은 무료입니다. 추가 테마와 이용량을 위한 프리미엄은 선택 사항입니다.",
+                              "lineHeight": 1.65,
+                              "fontFamily": "Noto Sans KR",
+                              "fontSize": 13.5,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
@@ -1468,193 +2490,633 @@
             },
             {
               "type": "frame",
-              "id": "downloadSection",
-              "x": 0,
-              "y": 3610,
-              "name": "Section · 다운로드",
-              "width": 1440,
-              "height": 530,
-              "fill": "$paper",
-              "layout": "none",
+              "id": "mHFnw",
+              "name": "section",
+              "context": "section",
+              "clip": true,
+              "width": "fill_container",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": -145,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#67d6f8",
+                    "position": 0
+                  },
+                  {
+                    "color": "#c7f2ff",
+                    "position": 0.6
+                  },
+                  {
+                    "color": "#fff0a5",
+                    "position": 1
+                  }
+                ]
+              },
+              "layout": "vertical",
+              "padding": [
+                104,
+                22
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ktDWW",
+                  "name": "div",
+                  "context": "div",
+                  "width": 1120,
+                  "height": 414.28,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 28,
+                      "id": "s8U5E",
+                      "x": 506,
+                      "y": 0,
+                      "name": "img",
+                      "context": "img",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "public/images/app-icon.png",
+                        "mode": "stretch"
+                      },
+                      "width": 108,
+                      "height": 108,
+                      "stroke": "#132f42",
+                      "strokeWidth": 4,
+                      "strokeAlignment": "inner",
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#132f42",
+                        "offset": {
+                          "x": 7,
+                          "y": 8
+                        }
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "J5yLR4",
+                      "x": 180,
+                      "y": 139.39,
+                      "name": "오늘의 하늘과 마음을 한곳에서 만나보세요",
+                      "context": "h2",
+                      "fill": "#132f42",
+                      "textGrowth": "fixed-width",
+                      "width": 760,
+                      "content": "오늘의 하늘과 마음을\n한곳에서 만나보세요",
+                      "lineHeight": 1.17,
+                      "textAlign": "center",
+                      "fontFamily": "Noto Sans KR",
+                      "fontSize": 50,
+                      "fontWeight": "950",
+                      "letterSpacing": -1.8
+                    },
+                    {
+                      "type": "text",
+                      "id": "Xiqya",
+                      "x": 235,
+                      "y": 272.39,
+                      "name": "Android와 iPhone에서 지금 시작할 수 있어요.",
+                      "context": "p",
+                      "fill": "#607686",
+                      "textGrowth": "fixed-width",
+                      "width": 650,
+                      "content": "Android와 iPhone에서 지금 시작할 수 있어요.",
+                      "lineHeight": 1.65,
+                      "textAlign": "center",
+                      "fontFamily": "Noto Sans KR",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "f9nGhs",
+                      "x": 0,
+                      "y": 354.78,
+                      "name": "div",
+                      "context": "div",
+                      "width": 1120,
+                      "gap": 12,
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "bPjna",
+                          "name": "a",
+                          "context": "a",
+                          "width": 190,
+                          "fill": "#132f42",
+                          "cornerRadius": 14,
+                          "stroke": "#132f42",
+                          "strokeWidth": 2,
+                          "strokeAlignment": "inner",
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "#ffffffcc",
+                            "offset": {
+                              "x": 5,
+                              "y": 6
+                            }
+                          },
+                          "gap": 11,
+                          "padding": [
+                            14,
+                            20
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "rEMrI",
+                              "name": "▶",
+                              "context": "span",
+                              "fill": "#ffffff",
+                              "textGrowth": "fixed-width",
+                              "width": 26,
+                              "content": "▶",
+                              "lineHeight": 1,
+                              "textAlign": "center",
+                              "fontFamily": "Noto Sans KR",
+                              "fontSize": 23,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "fWvYn",
+                              "name": "span",
+                              "context": "span",
+                              "width": 89.83,
+                              "height": 31.5,
+                              "layout": "vertical",
+                              "gap": 4,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "XfA15",
+                                  "name": "GET IT ON",
+                                  "context": "small",
+                                  "opacity": 0.78,
+                                  "fill": "#ffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "GET IT ON",
+                                  "lineHeight": 1.1,
+                                  "textAlign": "center",
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 10,
+                                  "fontWeight": "650"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "S9Ofw0",
+                                  "name": "Google Play",
+                                  "context": "strong",
+                                  "fill": "#ffffff",
+                                  "content": "Google Play",
+                                  "lineHeight": 1.1,
+                                  "textAlign": "center",
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 15,
+                                  "fontWeight": "900"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "I073rq",
+                          "name": "a",
+                          "context": "a",
+                          "width": 190,
+                          "fill": "#132f42",
+                          "cornerRadius": 14,
+                          "stroke": "#132f42",
+                          "strokeWidth": 2,
+                          "strokeAlignment": "inner",
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "#ffffffcc",
+                            "offset": {
+                              "x": 5,
+                              "y": 6
+                            }
+                          },
+                          "gap": 11,
+                          "padding": [
+                            14,
+                            20
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "S3Hob",
+                              "name": "●",
+                              "context": "span",
+                              "fill": "#ffffff",
+                              "textGrowth": "fixed-width",
+                              "width": 26,
+                              "content": "●",
+                              "lineHeight": 1,
+                              "textAlign": "center",
+                              "fontFamily": "Noto Sans KR",
+                              "fontSize": 23,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "R3sqpG",
+                              "name": "span",
+                              "context": "span",
+                              "width": 103.53,
+                              "height": 31.5,
+                              "layout": "vertical",
+                              "gap": 4,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "fOA1v",
+                                  "name": "DOWNLOAD ON THE",
+                                  "context": "small",
+                                  "opacity": 0.78,
+                                  "fill": "#ffffff",
+                                  "content": "DOWNLOAD ON THE",
+                                  "lineHeight": 1.1,
+                                  "textAlign": "center",
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 10,
+                                  "fontWeight": "650"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "qu02E",
+                                  "name": "App Store",
+                                  "context": "strong",
+                                  "fill": "#ffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "App Store",
+                                  "lineHeight": 1.1,
+                                  "textAlign": "center",
+                                  "fontFamily": "Noto Sans KR",
+                                  "fontSize": 15,
+                                  "fontWeight": "900"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "qwmaQ",
+          "name": "footer",
+          "context": "footer",
+          "width": "fill_container",
+          "height": 198.23,
+          "fill": "#0d2636",
+          "layout": "vertical",
+          "gap": 20.5,
+          "padding": [
+            48,
+            22,
+            38,
+            22
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "T2sunc",
+              "width": "fill_container",
+              "layout": "vertical",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "o5rJGY",
+                  "name": "div",
+                  "context": "div",
+                  "gap": 9,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 8,
+                      "id": "TcKEs",
+                      "name": "img",
+                      "context": "img",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "public/images/app-icon.png",
+                        "mode": "stretch"
+                      },
+                      "width": 30,
+                      "height": 30
+                    },
+                    {
+                      "type": "text",
+                      "id": "cmMdf",
+                      "name": "날씨 - 부엉이 편지",
+                      "context": "span",
+                      "fill": "#ffffff",
+                      "content": "날씨 - 부엉이 편지",
+                      "lineHeight": 1.65,
+                      "textAlign": "center",
+                      "fontFamily": "Noto Sans KR",
+                      "fontSize": 13,
+                      "fontWeight": "900"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "x8X1Ep",
+              "name": "div",
+              "context": "div",
+              "width": "fill_container",
+              "height": 21.44,
+              "gap": 25,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dM28U",
+                  "name": "행동 추천 가이드",
+                  "context": "a",
+                  "fill": "#ffffffdb",
+                  "content": "행동 추천 가이드",
+                  "lineHeight": 1.65,
+                  "textAlign": "center",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "Cvz2R",
+                  "name": "공유 카드",
+                  "context": "a",
+                  "fill": "#ffffffdb",
+                  "content": "공유 카드",
+                  "lineHeight": 1.65,
+                  "textAlign": "center",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "AYrxO",
+                  "name": "개인정보처리방침",
+                  "context": "a",
+                  "fill": "#ffffffdb",
+                  "content": "개인정보처리방침",
+                  "lineHeight": 1.65,
+                  "textAlign": "center",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "pfkC7",
+                  "name": "이용약관",
+                  "context": "a",
+                  "fill": "#ffffffdb",
+                  "content": "이용약관",
+                  "lineHeight": 1.65,
+                  "textAlign": "center",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "OM0Fd",
+                  "name": "계정 및 데이터 삭제",
+                  "context": "a",
+                  "fill": "#ffffffdb",
+                  "content": "계정 및 데이터 삭제",
+                  "lineHeight": 1.65,
+                  "textAlign": "center",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "mHz8Y",
+                  "name": "English support",
+                  "context": "a",
+                  "fill": "#ffffffdb",
+                  "content": "English support",
+                  "lineHeight": 1.65,
+                  "textAlign": "center",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "g7usTB",
+                  "name": "pryzm 도구 모음",
+                  "context": "a",
+                  "fill": "#ffffffdb",
+                  "content": "pryzm 도구 모음",
+                  "lineHeight": 1.65,
+                  "textAlign": "center",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "JHkdi",
+              "name": "© 2026 pryzm · 날씨 데이터 출처: OpenWeatherMap",
+              "context": "p",
+              "fill": "#ffffff6b",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "© 2026 pryzm · 날씨 데이터 출처: OpenWeatherMap · Open-Meteo · AirKorea",
+              "lineHeight": 1.65,
+              "textAlign": "center",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "EsCBr",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "nav",
+          "context": "nav",
+          "width": 1440,
+          "height": 66,
+          "fill": "#fffdf5e0",
+          "stroke": "#132f4221",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "strokeAlignment": "inner",
+          "effect": {
+            "type": "background_blur",
+            "radius": 16
+          },
+          "padding": [
+            0,
+            22,
+            1,
+            22
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "WNZC1",
+              "name": "a",
+              "context": "a",
+              "gap": 11,
+              "alignItems": "center",
               "children": [
                 {
                   "type": "rectangle",
-                  "cornerRadius": 28,
-                  "id": "downloadIcon",
-                  "x": 666,
-                  "y": 60,
-                  "name": "앱 아이콘",
+                  "cornerRadius": 11,
+                  "id": "YFog1",
+                  "name": "img",
+                  "context": "img",
                   "fill": {
                     "type": "image",
                     "enabled": true,
                     "url": "public/images/app-icon.png",
-                    "mode": "fill"
+                    "mode": "stretch"
                   },
-                  "width": 108,
-                  "height": 108,
-                  "effect": {
-                    "type": "shadow",
-                    "shadowType": "outer",
-                    "color": "#132F4230",
-                    "offset": {
-                      "x": 8,
-                      "y": 10
-                    }
-                  }
+                  "width": 38,
+                  "height": 38,
+                  "stroke": "#132f42",
+                  "strokeWidth": 2,
+                  "strokeAlignment": "inner"
                 },
                 {
                   "type": "text",
-                  "id": "downloadTitle",
-                  "x": 320,
-                  "y": 205,
-                  "fill": "$navy",
-                  "textGrowth": "fixed-width",
-                  "width": 800,
-                  "content": "오늘의 하늘과 마음을\n한곳에서 만나보세요",
-                  "lineHeight": 1.2,
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 42,
+                  "id": "yfhik",
+                  "name": "날씨 - 부엉이 편지",
+                  "context": "span",
+                  "fill": "#173346",
+                  "content": "날씨 - 부엉이 편지",
+                  "lineHeight": 1.65,
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 16,
                   "fontWeight": "900",
-                  "letterSpacing": -1.5
+                  "letterSpacing": -0.4
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qY4oD",
+              "name": "div",
+              "context": "div",
+              "gap": 22,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "nGod5",
+                  "name": "날씨 기능",
+                  "context": "a",
+                  "fill": "#173346",
+                  "content": "날씨 기능",
+                  "lineHeight": 1.65,
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 13,
+                  "fontWeight": "800"
                 },
                 {
                   "type": "text",
-                  "id": "downloadSub",
-                  "x": 335,
-                  "y": 320,
-                  "fill": "$muted",
-                  "textGrowth": "fixed-width",
-                  "width": 770,
-                  "content": "Android와 iPhone에서 지금 시작할 수 있어요.",
-                  "textAlign": "center",
-                  "fontFamily": "Noto Sans",
-                  "fontSize": 17,
-                  "fontWeight": "normal"
+                  "id": "A4sdm",
+                  "name": "부엉이 편지",
+                  "context": "a",
+                  "fill": "#173346",
+                  "content": "부엉이 편지",
+                  "lineHeight": 1.65,
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 13,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "m8CaO",
+                  "name": "앱 화면",
+                  "context": "a",
+                  "fill": "#173346",
+                  "content": "앱 화면",
+                  "lineHeight": 1.65,
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 13,
+                  "fontWeight": "800"
                 },
                 {
                   "type": "frame",
-                  "id": "downloadGoogle",
-                  "x": 495,
-                  "y": 380,
-                  "name": "Google Play 버튼",
-                  "width": 210,
-                  "height": 64,
-                  "fill": "$navy",
-                  "cornerRadius": 16,
-                  "layout": "none",
+                  "id": "PBztb",
+                  "name": "다운로드",
+                  "context": "a",
+                  "width": 80.98,
+                  "height": 43.44,
+                  "fill": "#132f42",
+                  "cornerRadius": 999,
+                  "stroke": "#132f42",
+                  "strokeWidth": 2,
+                  "strokeAlignment": "inner",
+                  "layout": "vertical",
+                  "padding": [
+                    9,
+                    16
+                  ],
+                  "justifyContent": "center",
                   "children": [
                     {
                       "type": "text",
-                      "id": "downloadGoogleLabel",
-                      "x": 0,
-                      "y": 19,
-                      "fill": "$white",
-                      "textGrowth": "fixed-width",
-                      "width": 210,
-                      "content": "▶  Google Play",
-                      "textAlign": "center",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 19,
-                      "fontWeight": "700"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "downloadApple",
-                  "x": 735,
-                  "y": 380,
-                  "name": "App Store 버튼",
-                  "width": 210,
-                  "height": 64,
-                  "fill": "$navy",
-                  "cornerRadius": 16,
-                  "layout": "none",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "downloadAppleLabel",
-                      "x": 0,
-                      "y": 19,
-                      "fill": "$white",
-                      "textGrowth": "fixed-width",
-                      "width": 210,
-                      "content": "●  App Store",
-                      "textAlign": "center",
-                      "fontFamily": "Noto Sans",
-                      "fontSize": 19,
-                      "fontWeight": "700"
+                      "id": "cvPHN",
+                      "fill": "#ffffff",
+                      "content": "다운로드",
+                      "lineHeight": 1.65,
+                      "fontFamily": "Noto Sans KR",
+                      "fontSize": 13,
+                      "fontWeight": "800"
                     }
                   ]
                 }
               ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "footer",
-          "x": 0,
-          "y": 5106,
-          "name": "Footer",
-          "width": 1440,
-          "height": 260,
-          "fill": "$navy",
-          "layout": "none",
-          "children": [
-            {
-              "type": "rectangle",
-              "cornerRadius": 11,
-              "id": "footerIcon",
-              "x": 120,
-              "y": 48,
-              "fill": {
-                "type": "image",
-                "enabled": true,
-                "url": "public/images/app-icon.png",
-                "mode": "fill"
-              },
-              "width": 42,
-              "height": 42
-            },
-            {
-              "type": "text",
-              "id": "footerBrand",
-              "x": 178,
-              "y": 58,
-              "fill": "$white",
-              "content": "날씨 - 부엉이 편지",
-              "fontFamily": "Noto Sans",
-              "fontSize": 18,
-              "fontWeight": "800"
-            },
-            {
-              "type": "text",
-              "id": "footerLinks",
-              "x": 120,
-              "y": 123,
-              "fill": "#DDEAF1FF",
-              "textGrowth": "fixed-width",
-              "width": 1200,
-              "content": "행동 추천 가이드   ·   공유 카드   ·   개인정보처리방침   ·   이용약관   ·   계정 및 데이터 삭제   ·   English support   ·   pryzm 도구 모음",
-              "lineHeight": 1.6,
-              "fontFamily": "Noto Sans",
-              "fontSize": 14,
-              "fontWeight": "600"
-            },
-            {
-              "type": "text",
-              "id": "footerCopy",
-              "x": 120,
-              "y": 190,
-              "fill": "#AFC3CFFF",
-              "textGrowth": "fixed-width",
-              "width": 1200,
-              "content": "© 2026 pryzm · 날씨 데이터 출처: OpenWeatherMap · Open-Meteo · AirKorea",
-              "fontFamily": "Noto Sans",
-              "fontSize": 13,
-              "fontWeight": "normal"
             }
           ]
         }
