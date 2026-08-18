@@ -1,0 +1,36 @@
+/* 날씨 기능 소개 영역 */
+.section {
+  width: 100%;
+  min-height: 650px;
+  padding: 96px 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--paper);
+}
+
+/* 콘텐츠 최대 너비 */
+.container {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+/* 날씨 기능 카드 배치 */
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* 개별 날씨 기능 카드 */
+.card {
+  width: calc((100% - 40px) / 3);
+  min-height: 210px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background-color: var(--white);
+  border-radius: 22px;
+}

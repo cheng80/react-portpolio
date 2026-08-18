@@ -1,0 +1,47 @@
+/* 부엉이 편지 소개 영역 */
+.section {
+  width: 100%;
+  min-height: 560px;
+  padding: 96px 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--cream);
+}
+
+/* 콘텐츠 최대 너비 */
+.container {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+/* 편지 기능 카드 배치 */
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+/* 개별 편지 기능 카드 */
+.card {
+  width: calc((100% - 24px) / 2);
+  min-height: 220px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  background-color: var(--paper);
+  border-radius: 22px;
+}
+
+/* 카드 안의 아이콘 */
+.icon {
+  font-size: 52px;
+}
+
+.card div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

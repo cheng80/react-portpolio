@@ -1,0 +1,36 @@
+/* 사용자 선택권 안내 영역 */
+.section {
+  width: 100%;
+  min-height: 540px;
+  padding: 96px 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--white);
+  background-color: var(--navy);
+}
+
+/* 콘텐츠 최대 너비 */
+.container {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+/* 서비스 이용 원칙 카드 배치 */
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* 개별 서비스 이용 원칙 카드 */
+.card {
+  width: calc((100% - 40px) / 3);
+  min-height: 190px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background-color: var(--ink);
+  border-radius: 20px;
+}

@@ -1,0 +1,14 @@
+/* 각 섹션의 영문 설명, 제목, 본문 묶음 */
+.title {
+  width: min(760px, 100%);
+  margin: 0 auto 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.title h2 {
+  font-size: 48px;
+}

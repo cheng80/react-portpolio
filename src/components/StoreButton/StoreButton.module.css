@@ -1,0 +1,13 @@
+/* Header와 DownloadSection에서 재사용하는 앱스토어 버튼 */
+.button {
+  width: 190px;
+  height: 52px;
+  padding: 0 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  color: var(--white);
+  background-color: var(--navy);
+  border-radius: 14px;
+}
