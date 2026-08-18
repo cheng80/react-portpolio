@@ -1,5 +1,5 @@
 import { appScreens } from '../../data/siteData'
-import SectionTitle from '../SectionTitle/SectionTitle'
+import SectionTitle from '../90_SectionTitle/SectionTitle'
 import styles from './ScreensSection_ver02.module.css'
 
 export default function ScreensSection() {

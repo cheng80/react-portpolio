@@ -18,6 +18,7 @@
 - [x] 원본 HTML의 `nav → header → main → footer` 순서를 React 컴포넌트에 대응했다.
 - [x] Main 내부를 Weather, Letter, Screens, Promise, Download 섹션으로 분리했다.
 - [x] 컴포넌트별 JSX와 CSS Module을 같은 폴더에 배치했다.
+- [x] 페이지 컴포넌트 폴더를 HTML 출력 순서대로 `00_`~`08_`, 공통 컴포넌트를 `90_`~`91_`로 구분했다.
 - [x] 반복 콘텐츠를 [`siteData.js`](../src/data/siteData.js)의 배열로 관리했다.
 - [x] `SectionTitle`, `StoreButton` 공통 컴포넌트를 적용했다.
 - [x] 주요 JSX와 CSS에 영역별 한글 주석을 작성했다.
@@ -65,7 +66,7 @@ body
         └── Footer              → <footer>
 ```
 
-`HomePage` 같은 별도 페이지 컴포넌트는 만들지 않았다. 원본 HTML과 이름을 바로 연결할 수 있도록 [`Main`](../src/components/Main/Main.jsx)이 `<main>`을 직접 반환한다.
+`HomePage` 같은 별도 페이지 컴포넌트는 만들지 않았다. 원본 HTML과 이름을 바로 연결할 수 있도록 [`Main`](../src/components/02_Main/Main.jsx)이 `<main>`을 직접 반환한다.
 
 ## 4. 현재 프로젝트 구조
 
@@ -91,50 +92,50 @@ react-portpolio/
 │       └── owl-06-personality.webp
 ├── src/
 │   ├── components/
-│   │   ├── DownloadSection/
-│   │   │   ├── DownloadSection.jsx
-│   │   │   ├── DownloadSection_ver01.module.css
-│   │   │   └── DownloadSection_ver02.module.css
-│   │   ├── Footer/
-│   │   │   ├── Footer.jsx
-│   │   │   ├── Footer_ver01.module.css
-│   │   │   └── Footer_ver02.module.css
-│   │   ├── Header/
-│   │   │   ├── Header.jsx
-│   │   │   ├── Header_ver01.module.css
-│   │   │   └── Header_ver02.module.css
-│   │   ├── LetterSection/
-│   │   │   ├── LetterSection.jsx
-│   │   │   ├── LetterSection_ver01.module.css
-│   │   │   └── LetterSection_ver02.module.css
-│   │   ├── Main/
-│   │   │   ├── Main.jsx
-│   │   │   ├── Main_ver01.module.css
-│   │   │   └── Main_ver02.module.css
-│   │   ├── Nav/
+│   │   ├── 00_Nav/
 │   │   │   ├── Nav.jsx
 │   │   │   ├── Nav_ver01.module.css
 │   │   │   └── Nav_ver02.module.css
-│   │   ├── PromiseSection/
-│   │   │   ├── PromiseSection.jsx
-│   │   │   ├── PromiseSection_ver01.module.css
-│   │   │   └── PromiseSection_ver02.module.css
-│   │   ├── ScreensSection/
+│   │   ├── 01_Header/
+│   │   │   ├── Header.jsx
+│   │   │   ├── Header_ver01.module.css
+│   │   │   └── Header_ver02.module.css
+│   │   ├── 02_Main/
+│   │   │   ├── Main.jsx
+│   │   │   ├── Main_ver01.module.css
+│   │   │   └── Main_ver02.module.css
+│   │   ├── 03_WeatherSection/
+│   │   │   ├── WeatherSection.jsx
+│   │   │   ├── WeatherSection_ver01.module.css
+│   │   │   └── WeatherSection_ver02.module.css
+│   │   ├── 04_LetterSection/
+│   │   │   ├── LetterSection.jsx
+│   │   │   ├── LetterSection_ver01.module.css
+│   │   │   └── LetterSection_ver02.module.css
+│   │   ├── 05_ScreensSection/
 │   │   │   ├── ScreensSection.jsx
 │   │   │   ├── ScreensSection_ver01.module.css
 │   │   │   └── ScreensSection_ver02.module.css
-│   │   ├── SectionTitle/
+│   │   ├── 06_PromiseSection/
+│   │   │   ├── PromiseSection.jsx
+│   │   │   ├── PromiseSection_ver01.module.css
+│   │   │   └── PromiseSection_ver02.module.css
+│   │   ├── 07_DownloadSection/
+│   │   │   ├── DownloadSection.jsx
+│   │   │   ├── DownloadSection_ver01.module.css
+│   │   │   └── DownloadSection_ver02.module.css
+│   │   ├── 08_Footer/
+│   │   │   ├── Footer.jsx
+│   │   │   ├── Footer_ver01.module.css
+│   │   │   └── Footer_ver02.module.css
+│   │   ├── 90_SectionTitle/
 │   │   │   ├── SectionTitle.jsx
 │   │   │   ├── SectionTitle_ver01.module.css
 │   │   │   └── SectionTitle_ver02.module.css
-│   │   ├── StoreButton/
-│   │   │   ├── StoreButton.jsx
-│   │   │   ├── StoreButton_ver01.module.css
-│   │   │   └── StoreButton_ver02.module.css
-│   │   └── WeatherSection/
-│   │       ├── WeatherSection.jsx
-│   │       ├── WeatherSection_ver01.module.css
-│   │       └── WeatherSection_ver02.module.css
+│   │   └── 91_StoreButton/
+│   │       ├── StoreButton.jsx
+│   │       ├── StoreButton_ver01.module.css
+│   │       └── StoreButton_ver02.module.css
 │   ├── data/
 │   │   └── siteData.js
 │   ├── App.css
@@ -183,8 +184,8 @@ react-portpolio/
 
 ### 재사용 컴포넌트와 데이터
 
-- [`SectionTitle`](../src/components/SectionTitle/SectionTitle.jsx): 섹션의 kicker, 제목, 설명을 재사용한다.
-- [`StoreButton`](../src/components/StoreButton/StoreButton.jsx): Header와 DownloadSection의 앱스토어 버튼을 재사용한다.
+- [`SectionTitle`](../src/components/90_SectionTitle/SectionTitle.jsx): 섹션의 kicker, 제목, 설명을 재사용한다.
+- [`StoreButton`](../src/components/91_StoreButton/StoreButton.jsx): Header와 DownloadSection의 앱스토어 버튼을 재사용한다.
 - [`siteData.js`](../src/data/siteData.js): 날씨 기능, 편지 기능, 앱 화면, 이용 원칙 카드 데이터를 관리한다.
 
 ## 6. Pen 디자인 파일

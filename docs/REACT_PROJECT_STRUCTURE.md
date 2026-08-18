@@ -33,50 +33,50 @@ react-portpolio/
 │
 ├── src/
 │   ├── components/
-│   │   ├── Nav/
+│   │   ├── 00_Nav/
 │   │   │   ├── Nav.jsx
 │   │   │   ├── Nav_ver01.module.css
 │   │   │   └── Nav_ver02.module.css
-│   │   ├── Header/
+│   │   ├── 01_Header/
 │   │   │   ├── Header.jsx
 │   │   │   ├── Header_ver01.module.css
 │   │   │   └── Header_ver02.module.css
-│   │   ├── Main/
+│   │   ├── 02_Main/
 │   │   │   ├── Main.jsx
 │   │   │   ├── Main_ver01.module.css
 │   │   │   └── Main_ver02.module.css
-│   │   ├── StoreButton/
-│   │   │   ├── StoreButton.jsx
-│   │   │   ├── StoreButton_ver01.module.css
-│   │   │   └── StoreButton_ver02.module.css
-│   │   ├── SectionTitle/
-│   │   │   ├── SectionTitle.jsx
-│   │   │   ├── SectionTitle_ver01.module.css
-│   │   │   └── SectionTitle_ver02.module.css
-│   │   ├── WeatherSection/
+│   │   ├── 03_WeatherSection/
 │   │   │   ├── WeatherSection.jsx
 │   │   │   ├── WeatherSection_ver01.module.css
 │   │   │   └── WeatherSection_ver02.module.css
-│   │   ├── LetterSection/
+│   │   ├── 04_LetterSection/
 │   │   │   ├── LetterSection.jsx
 │   │   │   ├── LetterSection_ver01.module.css
 │   │   │   └── LetterSection_ver02.module.css
-│   │   ├── ScreensSection/
+│   │   ├── 05_ScreensSection/
 │   │   │   ├── ScreensSection.jsx
 │   │   │   ├── ScreensSection_ver01.module.css
 │   │   │   └── ScreensSection_ver02.module.css
-│   │   ├── PromiseSection/
+│   │   ├── 06_PromiseSection/
 │   │   │   ├── PromiseSection.jsx
 │   │   │   ├── PromiseSection_ver01.module.css
 │   │   │   └── PromiseSection_ver02.module.css
-│   │   ├── DownloadSection/
+│   │   ├── 07_DownloadSection/
 │   │   │   ├── DownloadSection.jsx
 │   │   │   ├── DownloadSection_ver01.module.css
 │   │   │   └── DownloadSection_ver02.module.css
-│   │   └── Footer/
-│   │       ├── Footer.jsx
-│   │       ├── Footer_ver01.module.css
-│   │       └── Footer_ver02.module.css
+│   │   ├── 08_Footer/
+│   │   │   ├── Footer.jsx
+│   │   │   ├── Footer_ver01.module.css
+│   │   │   └── Footer_ver02.module.css
+│   │   ├── 90_SectionTitle/
+│   │   │   ├── SectionTitle.jsx
+│   │   │   ├── SectionTitle_ver01.module.css
+│   │   │   └── SectionTitle_ver02.module.css
+│   │   └── 91_StoreButton/
+│   │       ├── StoreButton.jsx
+│   │       ├── StoreButton_ver01.module.css
+│   │       └── StoreButton_ver02.module.css
 │   │
 │   ├── data/
 │   │   └── siteData.js
@@ -98,15 +98,15 @@ react-portpolio/
 
 | 원본 HTML | React 컴포넌트 | 담당 파일 |
 | --- | --- | --- |
-| `<nav>` | `<Nav />` | `Nav/Nav.jsx` |
-| `<header class="hero">` | `<Header />` | `Header/Header.jsx` |
-| `<main>` | `<Main />` | `Main/Main.jsx` |
-| `<section id="weather">` | `<WeatherSection />` | `WeatherSection/WeatherSection.jsx` |
-| `<section id="letters">` | `<LetterSection />` | `LetterSection/LetterSection.jsx` |
-| `<section id="screens">` | `<ScreensSection />` | `ScreensSection/ScreensSection.jsx` |
-| `<section id="promise">` | `<PromiseSection />` | `PromiseSection/PromiseSection.jsx` |
-| `<section id="download">` | `<DownloadSection />` | `DownloadSection/DownloadSection.jsx` |
-| `<footer>` | `<Footer />` | `Footer/Footer.jsx` |
+| `<nav>` | `<Nav />` | `00_Nav/Nav.jsx` |
+| `<header class="hero">` | `<Header />` | `01_Header/Header.jsx` |
+| `<main>` | `<Main />` | `02_Main/Main.jsx` |
+| `<section id="weather">` | `<WeatherSection />` | `03_WeatherSection/WeatherSection.jsx` |
+| `<section id="letters">` | `<LetterSection />` | `04_LetterSection/LetterSection.jsx` |
+| `<section id="screens">` | `<ScreensSection />` | `05_ScreensSection/ScreensSection.jsx` |
+| `<section id="promise">` | `<PromiseSection />` | `06_PromiseSection/PromiseSection.jsx` |
+| `<section id="download">` | `<DownloadSection />` | `07_DownloadSection/DownloadSection.jsx` |
+| `<footer>` | `<Footer />` | `08_Footer/Footer.jsx` |
 
 ## 컴포넌트 관계
 
@@ -157,14 +157,15 @@ App
 ## 구현 원칙
 
 1. 하나의 컴포넌트 폴더에 JSX와 CSS Module을 함께 둔다.
-2. 컴포넌트의 최상위 HTML 태그는 이름과 동일하게 Nav → `nav`, Header → `header`, Main → `main`, Footer → `footer`로 작성한다.
-3. 각 section 컴포넌트는 원본의 `id`를 유지한다.
-4. 반복 콘텐츠는 JSX에 직접 복사하지 않고 `siteData.js`의 배열을 `map()`으로 출력한다.
-5. 모든 이미지는 `public/images`에 두고 `/images/파일명`으로 참조한다.
-6. 모든 `display: flex`에는 `flex-direction: row` 또는 `column`을 명시한다.
-7. 현재 데스크톱 기준에는 `clamp()`를 사용하며 `@media` 반응형 스타일은 아직 추가하지 않는다.
-8. 현재는 단일 랜딩 페이지이므로 `pages`, `HomePage`, `react-router-dom`, `ScrollToTop`, `NotFoundPage`는 만들지 않는다.
-9. 다른 페이지가 실제로 추가될 때 라우터와 페이지 폴더를 확장한다.
+2. 페이지 컴포넌트 폴더는 HTML 출력 순서대로 `00_`부터 번호를 붙이고 공통 컴포넌트는 `90_`부터 구분한다.
+3. 컴포넌트의 최상위 HTML 태그는 이름과 동일하게 Nav → `nav`, Header → `header`, Main → `main`, Footer → `footer`로 작성한다.
+4. 각 section 컴포넌트는 원본의 `id`를 유지한다.
+5. 반복 콘텐츠는 JSX에 직접 복사하지 않고 `siteData.js`의 배열을 `map()`으로 출력한다.
+6. 모든 이미지는 `public/images`에 두고 `/images/파일명`으로 참조한다.
+7. 모든 `display: flex`에는 `flex-direction: row` 또는 `column`을 명시한다.
+8. 현재 데스크톱 기준에는 `clamp()`를 사용하며 `@media` 반응형 스타일은 아직 추가하지 않는다.
+9. 현재는 단일 랜딩 페이지이므로 `pages`, `HomePage`, `react-router-dom`, `ScrollToTop`, `NotFoundPage`는 만들지 않는다.
+10. 다른 페이지가 실제로 추가될 때 라우터와 페이지 폴더를 확장한다.
 
 ## App과 Main 기본 구조
 

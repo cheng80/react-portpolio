@@ -1,4 +1,4 @@
-import StoreButton from '../StoreButton/StoreButton'
+import StoreButton from '../91_StoreButton/StoreButton'
 import styles from './Header_ver02.module.css'
 
 export default function Header() {

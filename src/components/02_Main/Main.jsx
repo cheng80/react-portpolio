@@ -1,8 +1,8 @@
-import DownloadSection from '../DownloadSection/DownloadSection'
-import LetterSection from '../LetterSection/LetterSection'
-import PromiseSection from '../PromiseSection/PromiseSection'
-import ScreensSection from '../ScreensSection/ScreensSection'
-import WeatherSection from '../WeatherSection/WeatherSection'
+import DownloadSection from '../07_DownloadSection/DownloadSection'
+import LetterSection from '../04_LetterSection/LetterSection'
+import PromiseSection from '../06_PromiseSection/PromiseSection'
+import ScreensSection from '../05_ScreensSection/ScreensSection'
+import WeatherSection from '../03_WeatherSection/WeatherSection'
 import styles from './Main_ver02.module.css'
 
 export default function Main() {

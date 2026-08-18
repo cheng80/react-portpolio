@@ -1,7 +1,7 @@
-import Nav from './components/Nav/Nav'
-import Header from './components/Header/Header'
-import Main from './components/Main/Main'
-import Footer from './components/Footer/Footer'
+import Nav from './components/00_Nav/Nav'
+import Header from './components/01_Header/Header'
+import Main from './components/02_Main/Main'
+import Footer from './components/08_Footer/Footer'
 
 function App() {
   return (

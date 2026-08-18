@@ -1,5 +1,5 @@
 import { promises } from '../../data/siteData'
-import SectionTitle from '../SectionTitle/SectionTitle'
+import SectionTitle from '../90_SectionTitle/SectionTitle'
 import styles from './PromiseSection_ver02.module.css'
 
 export default function PromiseSection() {

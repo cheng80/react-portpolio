@@ -1,5 +1,5 @@
-import SectionTitle from '../SectionTitle/SectionTitle'
-import StoreButton from '../StoreButton/StoreButton'
+import SectionTitle from '../90_SectionTitle/SectionTitle'
+import StoreButton from '../91_StoreButton/StoreButton'
 import styles from './DownloadSection_ver02.module.css'
 
 export default function DownloadSection() {
