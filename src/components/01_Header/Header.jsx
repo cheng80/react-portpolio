@@ -1,5 +1,9 @@
 import StoreButton from '../91_StoreButton/StoreButton'
-import styles from './Header_ver02.module.css'
+import { selectStyles } from '../../styleVersion'
+import stylesVer01 from './Header_ver01.module.css'
+import stylesVer02 from './Header_ver02.module.css'
+
+const styles = selectStyles(stylesVer01, stylesVer02)
 
 export default function Header() {
   return (

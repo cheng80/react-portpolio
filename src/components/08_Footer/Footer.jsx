@@ -1,4 +1,8 @@
-import styles from './Footer_ver02.module.css'
+import { selectStyles } from '../../styleVersion'
+import stylesVer01 from './Footer_ver01.module.css'
+import stylesVer02 from './Footer_ver02.module.css'
+
+const styles = selectStyles(stylesVer01, stylesVer02)
 
 export default function Footer() {
   return (

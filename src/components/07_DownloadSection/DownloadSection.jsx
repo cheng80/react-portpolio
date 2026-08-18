@@ -1,6 +1,10 @@
 import SectionTitle from '../90_SectionTitle/SectionTitle'
 import StoreButton from '../91_StoreButton/StoreButton'
-import styles from './DownloadSection_ver02.module.css'
+import { selectStyles } from '../../styleVersion'
+import stylesVer01 from './DownloadSection_ver01.module.css'
+import stylesVer02 from './DownloadSection_ver02.module.css'
+
+const styles = selectStyles(stylesVer01, stylesVer02)
 
 export default function DownloadSection() {
   return (

@@ -1,4 +1,8 @@
-import styles from './StoreButton_ver02.module.css'
+import { selectStyles } from '../../styleVersion'
+import stylesVer01 from './StoreButton_ver01.module.css'
+import stylesVer02 from './StoreButton_ver02.module.css'
+
+const styles = selectStyles(stylesVer01, stylesVer02)
 
 export default function StoreButton({ symbol, label }) {
   const googlePlay = label === 'Google Play'

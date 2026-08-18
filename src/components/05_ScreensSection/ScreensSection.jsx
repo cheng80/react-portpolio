@@ -1,6 +1,10 @@
 import { appScreens } from '../../data/siteData'
 import SectionTitle from '../90_SectionTitle/SectionTitle'
-import styles from './ScreensSection_ver02.module.css'
+import { selectStyles } from '../../styleVersion'
+import stylesVer01 from './ScreensSection_ver01.module.css'
+import stylesVer02 from './ScreensSection_ver02.module.css'
+
+const styles = selectStyles(stylesVer01, stylesVer02)
 
 export default function ScreensSection() {
   return (

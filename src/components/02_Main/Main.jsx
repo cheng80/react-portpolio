@@ -3,7 +3,11 @@ import LetterSection from '../04_LetterSection/LetterSection'
 import PromiseSection from '../06_PromiseSection/PromiseSection'
 import ScreensSection from '../05_ScreensSection/ScreensSection'
 import WeatherSection from '../03_WeatherSection/WeatherSection'
-import styles from './Main_ver02.module.css'
+import { selectStyles } from '../../styleVersion'
+import stylesVer01 from './Main_ver01.module.css'
+import stylesVer02 from './Main_ver02.module.css'
+
+const styles = selectStyles(stylesVer01, stylesVer02)
 
 export default function Main() {
   return (

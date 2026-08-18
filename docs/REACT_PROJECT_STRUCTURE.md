@@ -83,7 +83,8 @@ react-portpolio/
 │   ├── App.css
 │   ├── App.jsx
 │   ├── index.css
-│   └── main.jsx
+│   ├── main.jsx
+│   └── styleVersion.js
 │
 ├── eslint.config.js
 ├── index.html
@@ -145,6 +146,7 @@ App
 - `Footer.jsx`: 원본의 `<footer>`를 출력한다.
 - `siteData.js`: 기능 카드, 편지 카드, 앱 화면, 약속 항목 데이터를 배열로 관리한다.
 - `index.css`: CSS 초기화, 기본 글꼴, `:root` 색상 토큰을 정의하는 전역 스타일이다.
+- `styleVersion.js`: 전체 컴포넌트가 사용할 `ver01` 또는 `ver02` CSS를 한 번에 선택한다.
 - `*_ver01.module.css`: 최종 치수의 기본 박스 모델을 담당한다.
 - `*_ver02.module.css`: 같은 배치에 색상, 그림자, hover와 장식을 더한 완성 스타일을 담당한다.
 - `public/images`: 모든 앱 아이콘과 화면 이미지를 보관한다. React에서는 `/images/파일명`, Pen 디자인에서는 `public/images/파일명`으로 같은 파일을 참조한다.

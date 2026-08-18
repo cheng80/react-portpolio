@@ -1,6 +1,10 @@
 import { weatherFeatures } from '../../data/siteData'
 import SectionTitle from '../90_SectionTitle/SectionTitle'
-import styles from './WeatherSection_ver02.module.css'
+import { selectStyles } from '../../styleVersion'
+import stylesVer01 from './WeatherSection_ver01.module.css'
+import stylesVer02 from './WeatherSection_ver02.module.css'
+
+const styles = selectStyles(stylesVer01, stylesVer02)
 
 export default function WeatherSection() {
   return (

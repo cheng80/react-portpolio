@@ -24,17 +24,29 @@ Header_ver02.module.css
 
 ## 버전 전환
 
-JSX 맨 위의 import 경로에서 버전 번호만 바꾼다.
+[`src/styleVersion.js`](../src/styleVersion.js)의 `STYLE_VERSION` 값만 바꾼다.
 
-```jsx
-// 기본 박스 모델
-import styles from './Header_ver01.module.css'
+```js
+// 기본 박스 모델 사용
+export const STYLE_VERSION = 'ver01'
 
-// 시각 디자인 완성본
-import styles from './Header_ver02.module.css'
+// 시각 디자인 완성본 사용
+export const STYLE_VERSION = 'ver02'
 ```
 
-모든 컴포넌트가 같은 버전을 사용해야 페이지 전체를 한 단계로 비교할 수 있다. 현재 기본 실행 버전은 `ver02`다.
+각 컴포넌트는 두 CSS Module을 불러오고 공통 함수로 사용할 스타일을 선택한다.
+
+```jsx
+import { selectStyles } from '../../styleVersion'
+import stylesVer01 from './Header_ver01.module.css'
+import stylesVer02 from './Header_ver02.module.css'
+
+const styles = selectStyles(stylesVer01, stylesVer02)
+```
+
+현재 기본 실행 버전은 `ver02`다. 비교 작업 중에는 두 CSS가 번들에 함께 포함된다.
+
+최종 버전이 확정되면 각 컴포넌트에서 선택하지 않는 CSS import와 `selectStyles` 호출을 제거하고 확정한 CSS 하나만 `styles`로 import할 수 있다. 그러면 사용하지 않는 버전은 번들에 포함되지 않는다.
 
 ## 공통 스타일
 

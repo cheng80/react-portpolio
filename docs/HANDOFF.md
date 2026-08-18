@@ -45,7 +45,7 @@
 
 - [x] 현재 완성 스타일을 `*_ver02.module.css`로 분리했다.
 - [x] 같은 박스 치수에 검은 실선만 표시하는 `*_ver01.module.css`를 작성했다.
-- [x] JSX import의 버전 번호만 바꿔 `ver01`과 `ver02`를 교체할 수 있게 했다.
+- [x] [`styleVersion.js`](../src/styleVersion.js)의 값 하나로 전체 컴포넌트의 `ver01`과 `ver02`를 교체할 수 있게 했다.
 - [x] 기본 실행 버전을 `ver02`로 설정했다.
 - [x] [`CSS_VERSION_GUIDE.md`](./CSS_VERSION_GUIDE.md)에 버전 차이와 교체 방법을 기록했다.
 
@@ -141,7 +141,8 @@ react-portpolio/
 │   ├── App.css
 │   ├── App.jsx
 │   ├── index.css
-│   └── main.jsx
+│   ├── main.jsx
+│   └── styleVersion.js
 ├── malgeum-reference.pen
 ├── index.html
 ├── package.json
@@ -162,7 +163,8 @@ react-portpolio/
 - 전역 색상 변수와 기본 초기화는 [`src/index.css`](../src/index.css)에 있다.
 - 컴포넌트별 스타일은 각 폴더의 `*_ver01.module.css`, `*_ver02.module.css`에 있다.
 - [`src/App.css`](../src/App.css)는 현재 빈 파일이며 import하지 않는다.
-- 현재 기본 실행 버전은 `ver02`이며 미디어 쿼리는 없다.
+- 전체 CSS 버전은 [`src/styleVersion.js`](../src/styleVersion.js)에서 선택하며 현재 기본값은 `ver02`다.
+- 미디어 쿼리는 아직 없다.
 - 섹션 콘텐츠는 주로 `width: 100%`와 `max-width: 1120px`를 함께 사용한다.
 - 버전 전환 방법은 [`CSS_VERSION_GUIDE.md`](./CSS_VERSION_GUIDE.md)에 정리했다.
 
@@ -253,7 +255,7 @@ react-portpolio/
 1. 이 문서를 먼저 읽는다.
 2. 원본 사이트와 [`malgeum-reference.pen`](../malgeum-reference.pen)을 함께 연다.
 3. 프로젝트에서 `npm run dev`를 실행한다.
-4. CSS 학습 단계에 따라 JSX import를 `ver01` 또는 `ver02`로 바꾼다.
+4. CSS 학습 단계에 따라 [`styleVersion.js`](../src/styleVersion.js)의 값을 `ver01` 또는 `ver02`로 바꾼다.
 5. 기본 실행 상태인 `ver02`를 기준으로 반응형 스타일을 추가한다.
 6. `ver01`에도 같은 반응형 박스 모델을 반영한다.
 
