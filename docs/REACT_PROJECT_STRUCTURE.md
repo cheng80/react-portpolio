@@ -12,6 +12,7 @@
 ```text
 react-portpolio/
 ├── docs/
+│   ├── CSS_VERSION_GUIDE.md
 │   ├── HANDOFF.md
 │   └── REACT_PROJECT_STRUCTURE.md
 │
@@ -34,37 +35,48 @@ react-portpolio/
 │   ├── components/
 │   │   ├── Nav/
 │   │   │   ├── Nav.jsx
-│   │   │   └── Nav.module.css
+│   │   │   ├── Nav_ver01.module.css
+│   │   │   └── Nav_ver02.module.css
 │   │   ├── Header/
 │   │   │   ├── Header.jsx
-│   │   │   └── Header.module.css
+│   │   │   ├── Header_ver01.module.css
+│   │   │   └── Header_ver02.module.css
 │   │   ├── Main/
 │   │   │   ├── Main.jsx
-│   │   │   └── Main.module.css
+│   │   │   ├── Main_ver01.module.css
+│   │   │   └── Main_ver02.module.css
 │   │   ├── StoreButton/
 │   │   │   ├── StoreButton.jsx
-│   │   │   └── StoreButton.module.css
+│   │   │   ├── StoreButton_ver01.module.css
+│   │   │   └── StoreButton_ver02.module.css
 │   │   ├── SectionTitle/
 │   │   │   ├── SectionTitle.jsx
-│   │   │   └── SectionTitle.module.css
+│   │   │   ├── SectionTitle_ver01.module.css
+│   │   │   └── SectionTitle_ver02.module.css
 │   │   ├── WeatherSection/
 │   │   │   ├── WeatherSection.jsx
-│   │   │   └── WeatherSection.module.css
+│   │   │   ├── WeatherSection_ver01.module.css
+│   │   │   └── WeatherSection_ver02.module.css
 │   │   ├── LetterSection/
 │   │   │   ├── LetterSection.jsx
-│   │   │   └── LetterSection.module.css
+│   │   │   ├── LetterSection_ver01.module.css
+│   │   │   └── LetterSection_ver02.module.css
 │   │   ├── ScreensSection/
 │   │   │   ├── ScreensSection.jsx
-│   │   │   └── ScreensSection.module.css
+│   │   │   ├── ScreensSection_ver01.module.css
+│   │   │   └── ScreensSection_ver02.module.css
 │   │   ├── PromiseSection/
 │   │   │   ├── PromiseSection.jsx
-│   │   │   └── PromiseSection.module.css
+│   │   │   ├── PromiseSection_ver01.module.css
+│   │   │   └── PromiseSection_ver02.module.css
 │   │   ├── DownloadSection/
 │   │   │   ├── DownloadSection.jsx
-│   │   │   └── DownloadSection.module.css
+│   │   │   ├── DownloadSection_ver01.module.css
+│   │   │   └── DownloadSection_ver02.module.css
 │   │   └── Footer/
 │   │       ├── Footer.jsx
-│   │       └── Footer.module.css
+│   │       ├── Footer_ver01.module.css
+│   │       └── Footer_ver02.module.css
 │   │
 │   ├── data/
 │   │   └── siteData.js
@@ -133,7 +145,8 @@ App
 - `Footer.jsx`: 원본의 `<footer>`를 출력한다.
 - `siteData.js`: 기능 카드, 편지 카드, 앱 화면, 약속 항목 데이터를 배열로 관리한다.
 - `index.css`: CSS 초기화, 기본 글꼴, `:root` 색상 토큰을 정의하는 전역 스타일이다.
-- `*.module.css`: 각 컴포넌트의 Flex 방향, 크기, 간격, 배경색과 배경 이미지를 담당한다.
+- `*_ver01.module.css`: 최종 치수의 기본 박스 모델을 담당한다.
+- `*_ver02.module.css`: 같은 배치에 색상, 그림자, hover와 장식을 더한 완성 스타일을 담당한다.
 - `public/images`: 모든 앱 아이콘과 화면 이미지를 보관한다. React에서는 `/images/파일명`, Pen 디자인에서는 `public/images/파일명`으로 같은 파일을 참조한다.
 - `StoreButton`: Header와 DownloadSection에서 재사용한다.
 - `SectionTitle`: 여러 섹션의 kicker, 제목, 설명 형식을 재사용한다.
@@ -149,7 +162,7 @@ App
 4. 반복 콘텐츠는 JSX에 직접 복사하지 않고 `siteData.js`의 배열을 `map()`으로 출력한다.
 5. 모든 이미지는 `public/images`에 두고 `/images/파일명`으로 참조한다.
 6. 모든 `display: flex`에는 `flex-direction: row` 또는 `column`을 명시한다.
-7. 현재 구조 파악 단계에서는 `@media`와 `clamp()` 같은 반응형 스타일을 사용하지 않는다.
+7. 현재 데스크톱 기준에는 `clamp()`를 사용하며 `@media` 반응형 스타일은 아직 추가하지 않는다.
 8. 현재는 단일 랜딩 페이지이므로 `pages`, `HomePage`, `react-router-dom`, `ScrollToTop`, `NotFoundPage`는 만들지 않는다.
 9. 다른 페이지가 실제로 추가될 때 라우터와 페이지 폴더를 확장한다.
 
@@ -188,14 +201,6 @@ function Main() {
 
 ```jsx
 <img src="/images/app-icon.png" alt="앱 아이콘" />
-```
-
-배경 이미지도 `public/images` 경로로 직접 참조한다.
-
-```css
-.visual {
-  background-image: url('/images/owl-01-home.webp');
-}
 ```
 
 `index.html`의 favicon도 같은 경로 규칙을 사용한다.

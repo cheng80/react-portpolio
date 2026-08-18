@@ -1,0 +1,38 @@
+/* ver01: 1440px 최종 치수의 박스 모델만 적용한 기본 단계 */
+.footer {
+  width: 100%;
+  padding: 48px 22px 38px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.brand {
+  margin-bottom: 20px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
+  font-weight: 900;
+}
+
+.brand img {
+  width: 30px;
+  height: 30px;
+}
+
+.links {
+  margin-bottom: 21px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px 25px;
+}
+
+.links a {
+  font-weight: 700;
+}
+
+.copy {
+  font-size: 12px;
+}

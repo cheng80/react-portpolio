@@ -1,0 +1,34 @@
+/* ver01: 1440px 최종 치수의 박스 모델만 적용한 기본 단계 */
+.button {
+  min-width: 190px;
+  padding: 12px 18px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 11px;
+  border: 2px solid #000;
+}
+
+.icon {
+  width: 26px;
+  text-align: center;
+  font-size: 23px;
+  line-height: 1;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.copy small {
+  margin-bottom: 4px;
+  font-size: 10px;
+  font-weight: 650;
+}
+
+.copy strong {
+  font-size: 15px;
+  font-weight: 900;
+}

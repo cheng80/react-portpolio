@@ -1,0 +1,155 @@
+/* ver02: 원본의 시각 장식까지 적용한 완성 단계 */
+.header {
+  position: relative;
+  width: 100%;
+  min-height: 900px;
+  padding: 132px 22px 88px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(145deg, #61d5f7 0%, #b7eeff 54%, #fff2ba 100%);
+}
+
+.header::before,
+.header::after {
+  content: '';
+  position: absolute;
+  background: var(--white);
+  border: 8px solid var(--navy);
+  border-radius: 50%;
+  opacity: 0.95;
+  pointer-events: none;
+}
+
+.header::before {
+  top: 100px;
+  right: -80px;
+  width: 260px;
+  height: 130px;
+}
+
+.header::after {
+  bottom: -45px;
+  left: -45px;
+  width: 210px;
+  height: 105px;
+}
+
+.inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 64px;
+}
+
+.eyebrow {
+  margin-bottom: 22px;
+  padding: 7px 14px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  background: var(--cream);
+  border: 2px solid var(--navy);
+  border-radius: 999px;
+  box-shadow: 4px 5px 0 var(--navy);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.header h1 {
+  max-width: 650px;
+  font-size: clamp(44px, 6.7vw, 76px);
+  font-weight: 950;
+  line-height: 1.08;
+  letter-spacing: -2.8px;
+  text-wrap: balance;
+}
+
+.header h1 span {
+  display: block;
+  color: var(--white);
+  -webkit-text-stroke: 2px var(--navy);
+  text-shadow: 5px 6px 0 var(--navy);
+}
+
+.lead {
+  max-width: 580px;
+  margin-top: 28px;
+  color: #284b61;
+  font-size: clamp(16px, 1.8vw, 20px);
+  font-weight: 650;
+  letter-spacing: -0.3px;
+}
+
+.lead strong {
+  color: var(--navy);
+}
+
+.storeRow {
+  margin-top: 34px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.locale {
+  margin-top: 18px;
+  color: rgba(19, 47, 66, 0.72);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.visual {
+  position: relative;
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+.card {
+  overflow: hidden;
+  aspect-ratio: 9 / 16;
+  background: var(--cream);
+  border: 8px solid var(--navy);
+  border-radius: 42px;
+  box-shadow: 18px 20px 0 rgba(19, 47, 66, 0.22), var(--shadow);
+  transform: rotate(2.2deg);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sticker {
+  position: absolute;
+  z-index: 2;
+  padding: 10px 15px;
+  background: var(--cream);
+  border: 3px solid var(--navy);
+  border-radius: 16px;
+  box-shadow: 5px 6px 0 var(--navy);
+  font-weight: 950;
+  transform: rotate(-5deg);
+}
+
+.top {
+  top: 7%;
+  right: -21%;
+}
+
+.bottom {
+  bottom: 10%;
+  left: -25%;
+  background: #ffe76b;
+  transform: rotate(5deg);
+}

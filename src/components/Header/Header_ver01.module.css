@@ -1,0 +1,107 @@
+/* ver01: 1440px 최종 치수의 박스 모델만 적용한 기본 단계 */
+.header {
+  position: relative;
+  width: 100%;
+  min-height: 900px;
+  padding: 132px 22px 88px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 64px;
+}
+
+.eyebrow {
+  margin-bottom: 22px;
+  padding: 7px 14px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid #000;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.header h1 {
+  max-width: 650px;
+  font-size: clamp(44px, 6.7vw, 76px);
+  font-weight: 950;
+  line-height: 1.08;
+  letter-spacing: -2.8px;
+  text-wrap: balance;
+}
+
+.header h1 span {
+  display: block;
+}
+
+.lead {
+  max-width: 580px;
+  margin-top: 28px;
+  font-size: clamp(16px, 1.8vw, 20px);
+  font-weight: 650;
+  letter-spacing: -0.3px;
+}
+
+.storeRow {
+  margin-top: 34px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.locale {
+  margin-top: 18px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.visual {
+  position: relative;
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+.card {
+  overflow: hidden;
+  aspect-ratio: 9 / 16;
+  border: 8px solid #000;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sticker {
+  position: absolute;
+  z-index: 2;
+  padding: 10px 15px;
+  border: 3px solid #000;
+  font-weight: 950;
+}
+
+.top {
+  top: 7%;
+  right: -21%;
+}
+
+.bottom {
+  bottom: 10%;
+  left: -25%;
+}

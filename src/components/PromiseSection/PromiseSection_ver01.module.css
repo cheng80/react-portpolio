@@ -1,0 +1,41 @@
+/* ver01: 1440px 최종 치수의 박스 모델만 적용한 기본 단계 */
+.section {
+  width: 100%;
+  padding: 104px 22px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  padding: 27px;
+  border: 1px solid #000;
+}
+
+.check {
+  width: 34px;
+  height: 34px;
+  margin-bottom: 15px;
+  display: grid;
+  place-items: center;
+  font-weight: 950;
+}
+
+.card h3 {
+  margin-bottom: 7px;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.card p {
+  font-size: 13.5px;
+}

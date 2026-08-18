@@ -1,6 +1,6 @@
 import { weatherFeatures } from '../../data/siteData'
 import SectionTitle from '../SectionTitle/SectionTitle'
-import styles from './WeatherSection.module.css'
+import styles from './WeatherSection_ver02.module.css'
 
 export default function WeatherSection() {
   return (
@@ -9,15 +9,15 @@ export default function WeatherSection() {
         {/* 날씨 기능 섹션 제목 */}
         <SectionTitle
           kicker="Weather for real life"
-          title="숫자를 읽는 대신 오늘 할 일을 바로 보세요"
-          description="복잡한 예보를 내 생활에 맞는 행동으로 바꿉니다."
+          title={<>숫자를 읽는 대신<br />오늘 할 일을 바로 보세요</>}
+          description="복잡한 예보를 내 생활에 맞는 행동으로 바꿉니다. 필요한 정보는 빠르게, 더 궁금한 것은 부엉이에게 물어보세요."
         />
 
         {/* 날씨 기능 카드 목록 */}
         <div className={styles.cards}>
           {weatherFeatures.map((feature) => (
             <article className={styles.card} key={feature.title}>
-              <span>{feature.icon}</span>
+              <span className={styles.icon} aria-hidden="true">{feature.icon}</span>
               <h3>{feature.title}</h3>
               <p>{feature.description}</p>
             </article>

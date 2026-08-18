@@ -1,0 +1,44 @@
+/* ver01: 1440px 최종 치수의 박스 모델만 적용한 기본 단계 */
+.nav {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 100;
+  width: 100%;
+  height: 66px;
+  padding: 0 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 11px;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: -0.4px;
+}
+
+.brand img {
+  width: 38px;
+  height: 38px;
+  border: 2px solid #000;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 22px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.download {
+  padding: 9px 16px;
+  border: 2px solid #000;
+}

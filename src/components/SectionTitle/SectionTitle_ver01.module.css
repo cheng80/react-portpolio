@@ -1,0 +1,31 @@
+/* ver01: 1440px 최종 치수의 박스 모델만 적용한 기본 단계 */
+.title {
+  width: 100%;
+}
+
+.kicker {
+  margin-bottom: 11px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 950;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+}
+
+.heading {
+  max-width: 760px;
+  margin: 0 auto 16px;
+  text-align: center;
+  font-size: clamp(32px, 4.5vw, 50px);
+  font-weight: 950;
+  line-height: 1.17;
+  letter-spacing: -1.8px;
+  text-wrap: balance;
+}
+
+.description {
+  max-width: 650px;
+  margin: 0 auto 56px;
+  text-align: center;
+  font-size: 16px;
+}

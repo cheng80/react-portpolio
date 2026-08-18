@@ -1,0 +1,48 @@
+/* ver02: 원본의 시각 장식까지 적용한 완성 단계 */
+.footer {
+  width: 100%;
+  padding: 48px 22px 38px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.66);
+  background: #0d2636;
+  font-size: 13px;
+}
+
+.brand {
+  margin-bottom: 20px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
+  color: var(--white);
+  font-weight: 900;
+}
+
+.brand img {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+}
+
+.links {
+  margin-bottom: 21px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px 25px;
+}
+
+.links a {
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: 700;
+}
+
+.links a:hover {
+  color: #76dcff;
+}
+
+.copy {
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 12px;
+}

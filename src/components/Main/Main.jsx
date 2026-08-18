@@ -3,7 +3,7 @@ import LetterSection from '../LetterSection/LetterSection'
 import PromiseSection from '../PromiseSection/PromiseSection'
 import ScreensSection from '../ScreensSection/ScreensSection'
 import WeatherSection from '../WeatherSection/WeatherSection'
-import styles from './Main.module.css'
+import styles from './Main_ver02.module.css'
 
 export default function Main() {
   return (
